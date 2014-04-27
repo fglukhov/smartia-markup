@@ -411,6 +411,24 @@ input[type=password] {
 	box-shadow:none;
 }
 
+textarea {
+  background:#fff;
+	border:none;
+	outline:none;
+	-webkit-border-radius:5px;
+	-moz-border-radius:5px;
+	border-radius:5px;
+	width:100%;
+	padding:7px 10px;
+	font-family:'Roboto';
+	font-size:15px;
+	font-weight:300;
+	-webkit-box-shadow:none;
+	-moz-box-shadow:none;
+	box-shadow:none;
+	resize:none;
+}
+
 .search-submit {
   width:20px;
 	height:20px;
@@ -542,6 +560,14 @@ input[type=password] {
 		padding:0 35px;
 	}
 	
+	.article-pic {
+		margin:0 -35px;
+	}
+
+	.questions-list {
+		margin:0 -35px;
+	}
+	
 }
 
 @media (min-width: 780px) {
@@ -560,6 +586,12 @@ input[type=password] {
 		margin:0 -25px;
 		padding:0 25px;
 	}
+	.article-pic {
+		margin:0 -25px;
+	}
+	.questions-list {
+		margin:0 -25px;
+	}
 }
 
 .content-filter {
@@ -567,7 +599,7 @@ input[type=password] {
   -moz-border-radius:6px;
   border-radius:6px;
 	background:#e9e8e0;
-	padding:9px 20px;
+	padding:18px 20px;
 	margin:0 0 20px 0;
 }
 
@@ -581,14 +613,22 @@ input[type=password] {
 	box-shadow:none !important;
 	outline:none !important;
 	color:#3d3d3d;
-	font-weight:normal;
+	font-weight:300;
 	font-size:15px;
 	width:100% !important;
 }
 
+.dropdown-menu {
+  font-weight:300;
+}
+
+.content-filter .selectpicker {
+  font-weight:normal;
+}
+
 .bootstrap-select {
   width:100% !important;
-	margin:9px 0 !important;
+	margin:0 0 !important;
 }
 
 .articles-list-item {
@@ -822,7 +862,7 @@ input[type=password] {
 	min-height:60px;
 }
 
-.col-r-collapsable-narrow .skills-item {
+.col-r-collapsable .skills-item {
   width:100%;
 }
 
@@ -1438,27 +1478,37 @@ h2.col-title {
 	background-image:url(../images/socbuttons.png);
 	background-repeat:no-repeat;
 	line-height:35px;
-	padding:0 0 0 38px;
+	padding:0 12px 0 38px;
 	margin:0 10px 10px 0;
 	font-size:14px;
 	color:#fff;
 	text-decoration:none;
 	font-weight:500;
+	border-radius:6px;
 }
 
 .socbutton-facebook {
   background-position:0 0;
-	width:91px;
+	/* width:91px; */
+	background-color:#4b68b8;
 }
 
 .socbutton-twitter {
   background-position:0 -35px;
-	width:86px;
+	/* width:86px; */
+	background-color:#51aded;
 }
 
 .socbutton-vkontakte {
   background-position:0 -70px;
-	width:91px;
+	/* width:91px; */
+	background-color:#5f83aa;
+}
+
+@media (min-width:780px) {
+  .col-r-collapsable .socbutton {
+		padding:0 10px 0 32px;
+	}
 }
 
 .professions-item {
@@ -1642,6 +1692,12 @@ h2.col-title {
 
 .reply-form .form-content {
   display:none;
+}
+
+@media (min-width:580px) {
+	.questions-list {
+		margin-bottom:20px;
+	}
 }
 
 .questions-list .question-question {
@@ -1889,4 +1945,393 @@ h2.col-title {
 		margin:0 15px 0 0 !important;
 	}
 	
+}
+
+.bootstrap-checkbox > button.btn {
+  width:26px;
+	height:26px;
+	padding:0;
+	margin:0;
+	border:none;
+}
+
+.button-checkbox .icon {
+  width:26px;
+	height:26px;
+	background:url(../images/checkbox.png);
+	margin:0;
+}
+
+.bootstrap-checkbox button.btn > span.icon:hover,
+.bootstrap-checkbox button.btn > span.cb-icon-check-empty,
+.bootstrap-checkbox button.btn > span.cb-icon-check-intermediate {
+  background-position:0 0;
+}
+
+.bootstrap-checkbox button.btn > span.cb-icon-check,
+.bootstrap-checkbox button.btn > span.cb-icon-check:hover {
+  background-position:-26px 0;
+}
+
+.checkbox {
+  padding-left: 0;
+	position: relative;
+	padding: 2px 0 0 40px;
+	margin: 0 0 17px 0;
+}
+
+.checkbox .button-checkbox {
+  position: absolute;
+	left: 0;
+	top: 0;
+}
+
+.bootstrap-select .btn:focus {
+  outline:none !important;
+}
+
+.reg-form-content {
+  margin:0 auto;
+	max-width:620px;
+}
+
+.article-pic img {
+  width:100%;
+}
+
+@media (min-width:780px) {
+  .article-sidebar {
+		width:178px;
+		margin:0 0 0 40px;
+		padding:23px 0 0 0;
+	}
+	.article-col-main {
+		width:auto;
+		float:none;
+		overflow:hidden;
+	}
+}
+
+.article-body {
+  font-size:17px;
+	line-height:26px;
+	font-weight:300;
+}
+
+.article-pic + .article-body {
+  padding:23px 0 0 0;
+}
+
+.article-body strong {
+  font-weight:500;
+}
+
+.article-body p {
+  margin:0 0 20px 0;
+}
+
+.article-body blockquote {
+  border: none;
+	color: #aaa899;
+	font-size: 22px;
+	line-height: 30px;
+	font-family: Georgia,serif;
+	font-style: italic;
+	margin: 20px 0 20px 0;
+	position: relative;
+	padding: 0 0 0 30px;
+}
+
+.article-body blockquote:before {
+  content:"—";
+	position:absolute;
+	left:0;
+	top:0;
+}
+
+.article-sidebar h2 {
+  margin:0 0 20px 0;
+	font-size:22px;
+	line-height:26px;
+}
+
+.article-pic-descr {
+  font-size:13px;
+	line-height:20px;
+	color:#aaa899;
+	margin:0 0 32px 0;
+}
+
+.article-body img {
+  margin:0 0 20px 0;
+}
+
+.article-body h2 {
+  margin:39px 0 12px 0;
+}
+
+.article-body .socbuttons {
+  padding:0;
+	margin:22px 0;
+}
+
+.author-about {
+  font-size:15px;
+	line-height:22px;
+	color:#545454;
+	margin:0 0 40px 0;
+}
+
+.author-about strong {
+  font-family:'PT Sans';
+	font-weight:bold;
+}
+
+.author-about-item {
+  margin:0 0 19px 0;
+}
+
+@media (max-width:500px) {
+  .article-body {
+		font-size:15px;
+		line-height:22px;
+	}
+	
+	.article-pic-descr {
+		font-size:13px;
+		line-height:20px;
+	}
+	
+	.article-body blockquote {
+		font-size:17px;
+		line-height:26px;
+	}
+	
+	.questions-list .question-question .descr .text {
+		font-size:15px;
+		line-height:22px;
+	}
+	
+}
+
+@media (min-width:780px) {
+  .author-skills .skills-item {
+		margin:0 0 40px 0;
+		padding:0;
+	}
+	
+	.author-skills .skills-item .pic {
+		position:relative;
+		left:auto;
+		margin:0 0 20px 0;
+	}
+	
+	.author-skills .skills-item .descr {
+		padding:0;
+	}
+	
+	.author-skills .skills-item .skill-name {
+		font-family: 'PT Sans';
+		font-weight: bold;
+		font-size: 16px;
+		line-height: 24px;
+		display: block;
+		margin: 0 0 9px 0;
+	}
+	
+	.author-skills .skills-item .skill-short {
+		font-size:13px;
+		line-height:20px;
+		color:#545454;
+	}
+	
+}
+
+@media (max-width:779px) {
+  .collapsable-content {
+		padding:20px 0 0 0;
+	}
+}
+
+.page-descr {
+  font-size:17px;
+	line-height:26px;
+	font-weight:300;
+}
+
+.page-descr p {
+  margin:0 0 25px 0;
+}
+
+.article-body img {
+  max-width:100%;
+}
+
+.material-pic img {
+  width:100%;
+}
+
+.material-level .descr {
+  font-size:15px;
+	line-height:22px;
+	color:#545454;
+	font-weight:300;
+}
+
+@media (max-width:779px) {
+
+	.material-level {
+		float:none;
+		width:auto !important;
+		min-height:0 !important;
+		margin:-20px 0 3px 0;
+	}
+
+  .material-level .pic {
+		display:none;
+	}
+	
+	.material-level .descr {
+		padding:0;
+	}
+}
+
+.material-content {
+  padding-top:0;
+}
+
+.article-body h3 {
+  font-family:'PT Sans';
+	font-weight:bold;
+	color:#545454;
+	font-size:18px;
+	line-height:20px;
+	margin:27px 0 13px 0;
+}
+
+.article-controls .btn {
+  margin:0 6px 0 0;
+}
+
+.article-reviews {
+  border-top:2px solid #d4d5d1;
+	margin:24px 0 26px 0;
+}
+
+.article-reviews .review-lead {
+	font-size: 17px;
+	line-height: 26px;
+	font-weight: 300;
+	margin: 0 0 12px 0;
+}
+
+.article-reviews .reviews-item {
+  padding: 17px 0 1px 0;
+	margin: 0 0 0px 0;
+}
+
+.article-body .questions-list {
+  margin-top:27px;
+}
+
+.col-r-collapsable .highlight {
+  font-size:16px;
+	line-height:24px;
+	padding:12px 20px;
+}
+
+.col-r-collapsable .socbuttons:first-child {
+  margin:0 0 30px 0;
+	padding:0;
+}
+
+@media (max-width:779px) {
+  .collapsable-between {
+		border-top:2px solid #d4d5d1;
+		margin-top:38px;
+	}
+	.col-r-collapsable .highlight {
+		margin:32px 0 39px 0;
+	}
+	.col-r-collapsable .socbuttons:first-child {
+		margin:40px 0 20px 0;
+	}
+}
+
+@media (min-width:780px) {
+  .material-related-items h2 {
+		font-size:22px;
+		line-height:26px;
+		margin:4px 0 33px 0;
+	}
+	.wide-invis {
+		display:none;
+	}
+}
+
+.common-form textarea {
+  border:1px solid #787e7c;
+	border-radius:0;
+}
+
+.exercise-form .bootstrap-checkbox > button.btn {
+  width:34px;
+	height:34px;
+	padding:0;
+	margin:0;
+	border:none;
+}
+
+.exercise-form .button-checkbox .icon {
+  width:34px;
+	height:34px;
+	background:url(../images/checkbox-2.png);
+	margin:0;
+}
+
+.exercise-form .bootstrap-checkbox button.btn > span.icon:hover,
+.exercise-form .bootstrap-checkbox button.btn > span.cb-icon-check-empty,
+.exercise-form .bootstrap-checkbox button.btn > span.cb-icon-check-intermediate {
+  background-position:0 0;
+}
+
+.exercise-form .bootstrap-checkbox button.btn > span.cb-icon-check,
+.exercise-form .bootstrap-checkbox button.btn > span.cb-icon-check:hover {
+  background-position:-34px 0;
+}
+
+.exercise-form .checkbox {
+  padding-left: 0;
+	position: relative;
+	padding: 2px 0 0 50px;
+	margin: 0 0 30px 0;
+	font-weight: 300;
+}
+
+.exercise-form .checkboxes {
+  border-top:2px solid #d4d5d1;
+  border-bottom:2px solid #d4d5d1;
+	padding:29px 0 6px 0;
+	margin:0 0 20px 0;
+}
+
+.exercise-form label {
+  font-weight:300;
+}
+
+.excercise-comment .form-title {
+  font-size:22px;
+	line-height:24px;
+	font-family:'PT Sans';
+	color:#545454;
+	font-weight:bold;
+	margin:25px 0 23px 0;
+}
+
+.exercise-form #progress {
+  display:none;
+}
+
+.exercise-form .btn {
+  margin:0 6px 0 0;
 }

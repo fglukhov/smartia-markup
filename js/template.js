@@ -1,5 +1,7 @@
 ﻿$(document).ready(function() {
 
+	$('input[type="checkbox"]').checkbox();
+
 	$(".form-collapsable .form-trigger").click(function() {
 		$(this).parents(".form-collapsable").find(".form-content").fadeIn(150);
 		$("html,body").css("overflow","hidden")

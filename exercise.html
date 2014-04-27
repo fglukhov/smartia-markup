@@ -1,0 +1,379 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<title>Смартия - Упражнение</title>
+		
+		<link href='http://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic,500,500italic,700,700italic&subset=cyrillic' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic&subset=cyrillic' rel='stylesheet' type='text/css'>
+
+		<link href="css/bootstrap.css" rel="stylesheet">
+		<link href="css/bootstrap-theme.css" rel="stylesheet">
+		<link href="css/bootstrap-select.css" rel="stylesheet">
+		<link href="css/bootstrap-checkbox.css" rel="stylesheet">
+		<link href="jquery-file-upload/css/jquery.fileupload.css" rel="stylesheet">
+		<link href="css/template.css" rel="stylesheet">
+
+		<!--[if lt IE 9]><![endif]-->
+
+		<!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+			<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+
+		<!-- Favicons -->
+    <link rel="shortcut icon" href="../assets/ico/favicon.ico">
+
+  </head>
+	
+	<body>
+	
+		<div class="header">
+			<div class="header-content">
+				<div class="search-form" id="searchForm">
+					<div class="container">
+						<div class="search-form-content">
+							<form action=".">
+								<input type="text" class="search-input"/>
+								<input type="submit" class="search-submit" value=""/>
+							</form>
+						</div>
+					</div>
+				</div>
+				<div class="main-menu-wrapper">
+					<div class="container">
+						<ul class="main-menu" id="mainMenu">
+							<li><a href="#">Умения</a></li>
+							<li><a href="#">Профессии</a></li>
+							<li class="main-menu-sep">&nbsp;</li>
+							<li><a href="#">Тесты</a></li>
+							<li><a href="#">Статьи</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="header-bottom">
+					<div class="container">
+						<div class="header-bottom-content">
+							<div class="logo">
+								<a href="#"><img src="images/logo.png" alt="Смартия"/></a>
+							</div>
+							<div class="btn btn-search toggler" data-togglertarget="searchForm"><img src="images/ico-search.png"/>Найти</div>
+							<div class="btn btn-menu toggler" data-togglertarget="mainMenu" data-togglertarget2="searchForm"><img src="images/ico-menu.png"/>Меню</div>
+							<div class="btn btn-default btn-login"><img src="images/ico-login.png"/>Войти</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="body">
+			<div class="container clearfix">
+				
+				<div class="page-title clearfix">
+					<div class="super-title">
+						Упражнение
+					</div>
+					<h1>Электронная секта</h1>
+					<div class="sub-title">
+						Начальный уровень, добавлено 23.03.14
+					</div>
+					
+					
+				</div>
+			
+			</div>
+			
+			<div class="container clearfix">
+				
+				<div class="col-main article-body">
+					<p>Вы успешно внедрились в обычную секту, поклоняющуюся святому дождевому червю? Отлично! Теперь освоим следующее упражнение и создадим для нашей новой секты прогрессивный электронный сайт.</p>
+					
+					<div class="common-form exercise-form">
+						<form action=".">
+							<div class="checkboxes">
+								<div class="checkbox">
+									<label>
+										<input type="checkbox" checked> Проверьте, установлен ли у вас Photoshop. Это очень важно.
+									</label>
+								</div>
+								<div class="checkbox">
+									<label>
+										<input type="checkbox" checked> Откройте инструкцию и установите плагин с сайта 960gs. Научитесь его использовать.
+									</label>
+								</div>
+								<div class="checkbox">
+									<label>
+										<input type="checkbox"> Если вам не нравится этот плагин, уходите отсюда, вы ничего не понимаете!
+									</label>
+								</div>
+								<div class="checkbox">
+									<label>
+										<input type="checkbox"> Загрузите скриншоты своего сайта на Смартию
+									</label>
+								</div>
+								<div class="checkbox">
+									<label>
+										<input type="checkbox"> И еще что нибудь загрузите сюда, нам тут совсем скучно
+									</label>
+								</div>
+							</div>
+							<div class="form-collapsable excercise-comment">
+								<div class="form-content">
+									<div class="form-title">Упражнение выполнено!</div>
+									<p>Отправьте нам результат текста теста, очень просим!</p>
+									<div class="form-group">
+										<textarea name="excercise_text" id="excercise_text" rows="5"></textarea>
+									</div>
+									<span class="btn btn-primary fileinput-button">
+											<i class="glyphicon glyphicon-plus"></i>
+											<span>Добавить файл</span>
+											<!-- The file input field used as target for the file upload widget -->
+											<input id="exercise_file" type="file" name="files[]" multiple>
+									</span>
+									<br>
+									<br>
+									<!-- The global progress bar -->
+									<div id="progress" class="progress">
+											<div class="progress-bar progress-bar-success"></div>
+									</div>
+									<!-- The container for the uploaded files -->
+									<div id="files" class="files"></div>
+									<div class="form-footer clearfix">
+										<input type="submit" value="Отправить сделанное" class="btn btn-default"/>
+										<div class="btn btn-primary comment-later">Пройти позже</div>
+										<div class="close"></div>
+									</div>
+								</div>
+								<div class="btn btn-default form-trigger">Сделано!</div>
+								<div class="btn btn-primary comment-later wide-invis">Пройти позже</div>
+							</div>
+						</form>
+					</div>
+				
+				</div>
+				
+				<div class="col-r-collapsable material-related-items">
+					<div class="socbuttons clearfix">
+									
+						<!-- Здесь нужно вставлять урлы текущих страниц. И вообще протестировать, чтоб нормально работало. -->
+						
+						<a class="socbutton socbutton-facebook" href="https://www.facebook.com/sharer/sharer.php&amp;u=smartia.ru" onclick="window.open(this.href, 'mywin', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;">Share</a>
+						<a class="socbutton socbutton-twitter" href="https://twitter.com/share" onclick="window.open(this.href, 'mywin', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;">Tweet</a>
+						<a class="socbutton socbutton-vkontakte" href="http://vkontakte.ru/share.php?url=http://mysite.com" onclick="window.open(this.href, 'mywin', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;">Share</a>
+						
+					</div>
+					<div class="block-expandable">
+						<h2 class="col-expandable-trigger clearfix">Развивает умения<div class="arr"></div></h2>
+						<div class="col-expandable vis-wide">
+							<div class="skills-list">
+								<div class="row">
+									<div class="skills-item">
+										<div class="pic">
+											<a href="#"><img src="images/skill-dummy-s.png"/></a>
+										</div>
+										<div class="descr">
+											<a class="skill-name" href="#">Сегментирование пользователей в GA по авинашекошевски</a>
+										</div>
+									</div>
+									<div class="skills-item">
+										<div class="pic">
+											<a href="#"><img src="images/skill-dummy-s.png"/></a>
+										</div>
+										<div class="descr">
+											<a class="skill-name" href="#">Брайан Клифтон: Advanced Web Metrics with Google Analytics</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+	
+			</div>
+			
+		</div>
+		
+		<div class="footer">
+			<div class="footer-content">
+				<div class="footer-menu-trigger clearfix">
+					<div class="container">
+						<div class="footer-menu-trigger-content">
+							<div class="footer-menu-toggler toggler" data-togglertarget="footerMenu">
+								Меню
+								<div class="btn btn-footer-menu"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="footer-menu-wrapper">
+					<div class="container">
+						<ul class="footer-menu" id="footerMenu">
+							<li><a href="#">Наш блог</a></li>
+							<li><a href="#">О Смартии</a></li>
+							<li><a href="#">Умения</a></li>
+							<li><a href="#">Профессии</a></li>
+							<li><a href="#">Тесты</a></li>
+							<li><a href="#">Статьи</a></li>
+							<li><a href="#">Обратная связь</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="footer-bottom">
+					<div class="container">
+						<div class="footer-soclinks clearfix">
+							<a href="#" class="sn-ico ico-twitter"></a>
+							<a href="#" class="sn-ico ico-twitter"></a>
+							<a href="#" class="sn-ico ico-fb"></a>
+							<a href="#" class="sn-ico ico-vk"></a>
+						</div>
+						<div class="footer-legal">
+							<a href="#">Правила распространения материалов Smartia.ru</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!-- <div style="height:500px;"></div> -->
+	
+		
+		
+		<!-- Bootstrap core JavaScript
+		================================================== -->
+		<!-- Placed at the end of the document so the pages load faster -->
+		<script src="js/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/bootstrap-select.min.js"></script>
+		<script src="js/bootstrap-checkbox.js"></script>
+		<script src="js/modernizr.custom.js"></script>
+		<!-- The jQuery UI widget factory, can be omitted if jQuery UI is already included -->
+		<script src="jquery-file-upload/js/vendor/jquery.ui.widget.js"></script>
+		<!-- The Load Image plugin is included for the preview images and image resizing functionality -->
+		<script src="http://blueimp.github.io/JavaScript-Load-Image/js/load-image.min.js"></script>
+		<!-- The Canvas to Blob plugin is included for image resizing functionality -->
+		<script src="http://blueimp.github.io/JavaScript-Canvas-to-Blob/js/canvas-to-blob.min.js"></script>
+		<!-- The Iframe Transport is required for browsers without support for XHR file uploads -->
+		<script src="jquery-file-upload/js/jquery.iframe-transport.js"></script>
+		<!-- The basic File Upload plugin -->
+		<script src="jquery-file-upload/js/jquery.fileupload.js"></script>
+		<!-- The File Upload processing plugin -->
+		<script src="jquery-file-upload/js/jquery.fileupload-process.js"></script>
+		<!-- The File Upload image preview & resize plugin -->
+		<script src="jquery-file-upload/js/jquery.fileupload-image.js"></script>
+		<!-- The File Upload audio preview plugin -->
+		<script src="jquery-file-upload/js/jquery.fileupload-audio.js"></script>
+		<!-- The File Upload video preview plugin -->
+		<script src="jquery-file-upload/js/jquery.fileupload-video.js"></script>
+		<!-- The File Upload validation plugin -->
+		<script src="jquery-file-upload/js/jquery.fileupload-validate.js"></script>
+		<script src="js/template.js"></script>
+		
+		<script>
+		/*jslint unparam: true, regexp: true */
+		/*global window, $ */
+		$(function () {
+				'use strict';
+				// Change this to the location of your server-side upload handler:
+				var url = window.location.hostname === 'blueimp.github.io' ?
+                '//jquery-file-upload.appspot.com/' : '/jquery-file-upload/server/php/',
+						uploadButton = $('<button/>')
+								.addClass('btn btn-primary')
+								.prop('disabled', true)
+								.text('Processing...')
+								.on('click', function () {
+										var $this = $(this),
+												data = $this.data();
+										$this
+												.off('click')
+												.text('Abort')
+												.on('click', function () {
+														$this.remove();
+														data.abort();
+												});
+										data.submit().always(function () {
+												$this.remove();
+										});
+								});
+				$('#exercise_file').fileupload({
+						url: url,
+						dataType: 'json',
+						autoUpload: false,
+						acceptFileTypes: /(\.|\/)(gif|jpe?g|png)$/i,
+						maxFileSize: 5000000, // 5 MB
+						// Enable image resizing, except for Android and Opera,
+						// which actually support image resizing, but fail to
+						// send Blob objects via XHR requests:
+						disableImageResize: /Android(?!.*Chrome)|Opera/
+								.test(window.navigator.userAgent),
+						previewMaxWidth: 100,
+						previewMaxHeight: 100,
+						previewCrop: true
+				}).on('fileuploadadd', function (e, data) {
+						data.context = $('<div/>').appendTo('#files');
+						$.each(data.files, function (index, file) {
+								var node = $('<p/>')
+												.append($('<span/>').text(file.name));
+								if (!index) {
+										node
+												.append('<br>')
+												.append(uploadButton.clone(true).data(data));
+								}
+								node.appendTo(data.context);
+						});
+				}).on('fileuploadprocessalways', function (e, data) {
+						var index = data.index,
+								file = data.files[index],
+								node = $(data.context.children()[index]);
+						if (file.preview) {
+								node
+										.prepend('<br>')
+										.prepend(file.preview);
+						}
+						if (file.error) {
+								node
+										.append('<br>')
+										.append($('<span class="text-danger"/>').text(file.error));
+						}
+						if (index + 1 === data.files.length) {
+								data.context.find('button')
+										.text('Upload')
+										.prop('disabled', !!data.files.error);
+						}
+				}).on('fileuploadprogressall', function (e, data) {
+						var progress = parseInt(data.loaded / data.total * 100, 10);
+						$('#progress .progress-bar').css(
+								'width',
+								progress + '%'
+						);
+				}).on('fileuploaddone', function (e, data) {
+						$.each(data.result.files, function (index, file) {
+								if (file.url) {
+										var link = $('<a>')
+												.attr('target', '_blank')
+												.prop('href', file.url);
+										$(data.context.children()[index])
+												.wrap(link);
+								} else if (file.error) {
+										var error = $('<span class="text-danger"/>').text(file.error);
+										$(data.context.children()[index])
+												.append('<br>')
+												.append(error);
+								}
+						});
+				}).on('fileuploadfail', function (e, data) {
+						$.each(data.files, function (index, file) {
+								var error = $('<span class="text-danger"/>').text('File upload failed.');
+								$(data.context.children()[index])
+										.append('<br>')
+										.append(error);
+						});
+				}).prop('disabled', !$.support.fileInput)
+						.parent().addClass($.support.fileInput ? undefined : 'disabled');
+		});
+		</script>
+		
+	</body>
+</html>
