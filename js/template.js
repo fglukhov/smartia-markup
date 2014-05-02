@@ -1,6 +1,15 @@
 ﻿$(document).ready(function() {
 
-	$('input[type="checkbox"]').checkbox();
+	$(".user-menu-toggler").click(function() {
+		$(this).toggleClass("user-menu-toggler-on")
+		if ($(this).hasClass("user-menu-toggler-on")) {
+			$(this).find(".text").html("Свернуть")
+		} else {
+			$(this).find(".text").html("Мое меню")
+		}
+	});
+
+	$('input[type="checkbox"],input[type="radio"]').iCheck();
 
 	$(".form-collapsable .form-trigger").click(function() {
 		$(this).parents(".form-collapsable").find(".form-content").fadeIn(150);

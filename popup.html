@@ -5,7 +5,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 
-		<title>Смартия - Список статей</title>
+		<title>Смартия - Страница профессии</title>
 		
 		<link href='http://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic,500,500italic,700,700italic&subset=cyrillic' rel='stylesheet' type='text/css'>
 		<link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic&subset=cyrillic' rel='stylesheet' type='text/css'>
@@ -72,85 +72,61 @@
 			<div class="container clearfix">
 				
 				<div class="page-title clearfix">
-					<h1>Изба-читальня</h1>
+					<div class="super-title center">
+						Пример
+					</div>
+					<h1 class="center">Всплывающего окна</h1>
 				</div>
 				
-				<div class="col-main">
-					
-					<div class="content-filter">
-						<div class="select-item">
-							<select class="selectpicker">
-								<option>Все тексты</option>
-								<option>Статьи</option>
-								<option>Новости</option>
-								<option>Аналитика</option>
-							</select>
-						</div>
-					</div>
-					
-					<div class="articles-list">
-						<div class="articles-list-item">
-							<div class="date">15 марта 2014</div>
-							<div class="pic"><a href="#"><img src="files/article-1.jpg" /></a></div>
-							<h3><a href="#">Михаил Котиков: Капитан технической поддержки</a></h3>
-							<div class="text">
-								<p>Организует работу отделов, принимает на работу сотрудников, обучает их, делает им хорошо</p>
-							</div>
-						</div>
-						<div class="articles-list-item">
-							<div class="date">31 марта 2014</div>
-							<div class="pic"><a href="#"><img src="files/article-2.jpg" /></a></div>
-							<h3><a href="#">Каждый раз ты шпионом проникаешь в чужой мир</a></h3>
-							<div class="text">
-								<p>Синхронист Мария Пирсон — о профессии переводчика, специально для пользователей Смартии</p>
-							</div>
-						</div>
-						<div class="articles-list-item">
-							<div class="date">15 марта 2014</div>
-							<div class="pic"><a href="#"><img src="files/article-1.jpg" /></a></div>
-							<h3><a href="#">Михаил Котиков: Капитан технической поддержки</a></h3>
-							<div class="text">
-								<p>Организует работу отделов, принимает на работу сотрудников, обучает их, делает им хорошо</p>
-							</div>
-						</div>
-					</div>
-					
-					<ul class="pagination">
-						<li><a href="#"><span class="arr">&nbsp;</span></a></li>
-						<li><a href="#">231</a></li>
-						<li class="active"><a href="#">232</a></li>
-						<li><a href="#">233</a></li>
-						<li><a href="#"><span class="arr">&nbsp;</span></a></li>
-					</ul>
-					
-				</div>
-				
-				<div class="col-r-collapsable">
-					<div class="block-expandable">
-						<h2 class="col-expandable-trigger clearfix col-title">Блог Смартии<div class="arr"></div></h2>
-						<div class="col-expandable vis-wide">
-							<div class="articles-list articles-list-small">
-								<div class="articles-list-item">
-									<div class="date">15 марта 2014</div>
-									<div class="pic"><a href="#"><img src="files/article-1.jpg" /></a></div>
-									<h3><a href="#">Михаил Котиков: Капитан технической поддержки</a></h3>
+				<div class="skill-buttons clearfix">
+					<div class="btn btn-primary" data-toggle="modal" data-target="#modal_1">Нажми меня!</div>
+					<!-- Modal -->
+					<div class="modal prof-modal fade" id="modal_1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+						<div class="modal-dialog">
+							<div class="modal-content">
+								<div class="modal-header">
+									<button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
+									<h4 class="modal-title" id="myModalLabel">Изученные материалы для умения такого-то</h4>
 								</div>
-								<div class="articles-list-item">
-									<div class="date">31 марта 2014</div>
-									<div class="pic"><a href="#"><img src="files/article-2.jpg" /></a></div>
-									<h3><a href="#">Каждый раз ты шпионом проникаешь в чужой мир</a></h3>
-								</div>
-								<div class="articles-list-item">
-									<div class="date">15 марта 2014</div>
-									<div class="pic"><a href="#"><img src="files/article-1.jpg" /></a></div>
-									<h3><a href="#">Михаил Котиков: Капитан технической поддержки</a></h3>
+								<div class="modal-body">
+									<div class="skills-list">
+										<div class="clearfix">
+											<div class="row">
+												<div class="skills-item">
+													<div class="pic">
+														<a href="#"><img src="images/skill-dummy-s.png"></a>
+													</div>
+													<div class="descr">
+														<a class="skill-name" href="#">Сегментирование пользователей в GA по авинашекошевски</a>
+													</div>
+												</div>
+												<div class="skills-item">
+													<div class="pic">
+														<a href="#"><img src="images/skill-dummy-s.png"></a>
+													</div>
+													<div class="descr">
+														<a class="skill-name" href="#">Брайан Клифтон: Advanced Web Metrics with Google Analytics</a>
+													</div>
+												</div>
+												<div class="skills-item">
+													<div class="pic">
+														<a href="#"><img src="images/skill-dummy-s.png"></a>
+													</div>
+													<div class="descr">
+														<a class="skill-name" href="#">Рассказ про сообщество упоротых аналитиков</a>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-				
+			
 			</div>
+			
 		</div>
 		
 		<div class="footer">
@@ -181,9 +157,9 @@
 				<div class="footer-bottom">
 					<div class="container">
 						<div class="footer-soclinks clearfix">
-							<a href="#" class="sn-ico ico-fb"></a>
 							<a href="#" class="sn-ico ico-twitter"></a>
-							<a href="#" class="sn-ico ico-ok"></a>
+							<a href="#" class="sn-ico ico-twitter"></a>
+							<a href="#" class="sn-ico ico-fb"></a>
 							<a href="#" class="sn-ico ico-vk"></a>
 						</div>
 						<div class="footer-legal">

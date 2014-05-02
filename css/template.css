@@ -42,6 +42,12 @@ h2 {
 	font-weight:bold;
 }
 
+@media (max-width:779px) {
+  h2 {
+		font-size:22px;
+	}
+}
+
 @media (max-width:500px) {
   h1 {
 		font-size:33px;
@@ -52,6 +58,7 @@ h2 {
 
 .body {
   padding:48px 0 0 0;
+	font-weight:300;
 }
 
 @media (min-width:780px) {
@@ -107,7 +114,7 @@ h2 {
 	padding:6px 15px 6px 10px;
 }
 
-@media (max-width: 419px) {
+@media (max-width: 470px) {
   .btn-login {
 		width:40px;
 		overflow:hidden;
@@ -151,7 +158,7 @@ h2 {
 }
 
 .main-menu-wrapper {
-  position:absolute;
+  /* position:absolute; */
 	width:100%;
 	z-index:2;
 }
@@ -164,16 +171,23 @@ h2 {
 	font-weight: 500;
 	position: absolute;
 	left: 50%;
-	top: 10px;
+	bottom: 10px;
 	margin-left: -325px;
 	width: 600px;
 	text-align: center;
+	z-index:2;
 }
 
 .main-menu li {
   display:inline-block;
 	padding:0 18px;
 	margin:0;
+}
+
+@media (max-width:960px) {
+  .main-menu li {
+		padding:0 10px;
+	}
 }
 
 .main-menu .main-menu-sep {
@@ -301,7 +315,7 @@ h2 {
 	
   .main-menu {
 		position:relative;
-		top:auto;
+		bottom:auto;
 		left:auto;
 		display:none;
 		margin-left:0;
@@ -1947,44 +1961,7 @@ h2.col-title {
 	
 }
 
-.bootstrap-checkbox > button.btn {
-  width:26px;
-	height:26px;
-	padding:0;
-	margin:0;
-	border:none;
-}
 
-.button-checkbox .icon {
-  width:26px;
-	height:26px;
-	background:url(../images/checkbox.png);
-	margin:0;
-}
-
-.bootstrap-checkbox button.btn > span.icon:hover,
-.bootstrap-checkbox button.btn > span.cb-icon-check-empty,
-.bootstrap-checkbox button.btn > span.cb-icon-check-intermediate {
-  background-position:0 0;
-}
-
-.bootstrap-checkbox button.btn > span.cb-icon-check,
-.bootstrap-checkbox button.btn > span.cb-icon-check:hover {
-  background-position:-26px 0;
-}
-
-.checkbox {
-  padding-left: 0;
-	position: relative;
-	padding: 2px 0 0 40px;
-	margin: 0 0 17px 0;
-}
-
-.checkbox .button-checkbox {
-  position: absolute;
-	left: 0;
-	top: 0;
-}
 
 .bootstrap-select .btn:focus {
   outline:none !important;
@@ -2274,44 +2251,10 @@ h2.col-title {
 	border-radius:0;
 }
 
-.exercise-form .bootstrap-checkbox > button.btn {
-  width:34px;
-	height:34px;
-	padding:0;
-	margin:0;
-	border:none;
-}
-
-.exercise-form .button-checkbox .icon {
-  width:34px;
-	height:34px;
-	background:url(../images/checkbox-2.png);
-	margin:0;
-}
-
-.exercise-form .bootstrap-checkbox button.btn > span.icon:hover,
-.exercise-form .bootstrap-checkbox button.btn > span.cb-icon-check-empty,
-.exercise-form .bootstrap-checkbox button.btn > span.cb-icon-check-intermediate {
-  background-position:0 0;
-}
-
-.exercise-form .bootstrap-checkbox button.btn > span.cb-icon-check,
-.exercise-form .bootstrap-checkbox button.btn > span.cb-icon-check:hover {
-  background-position:-34px 0;
-}
-
-.exercise-form .checkbox {
-  padding-left: 0;
-	position: relative;
-	padding: 2px 0 0 50px;
-	margin: 0 0 30px 0;
-	font-weight: 300;
-}
-
 .exercise-form .checkboxes {
   border-top:2px solid #d4d5d1;
   border-bottom:2px solid #d4d5d1;
-	padding:29px 0 6px 0;
+	padding:29px 0 0 0;
 	margin:0 0 20px 0;
 }
 
@@ -2334,4 +2277,355 @@ h2.col-title {
 
 .exercise-form .btn {
   margin:0 6px 0 0;
+}
+
+.radio, .checkbox {
+  padding: 0;
+	margin: 0 0 30px 0;
+}
+
+.radio label, .checkbox label {
+	display: block;
+	font-weight: normal;
+	cursor: pointer;
+	position: relative;
+	padding: 3px 0 0 50px;
+	min-height: 36px;
+	font-weight:300;
+}
+
+.radio label {
+  padding-top:5px;
+}
+
+.test-form label,
+.exercise-form label {
+  font-size:17px;
+	line-height:24px;
+}
+
+.reg-form .checkbox {
+  margin-bottom:17px;
+	min-height:26px;
+}
+
+.reg-form .icheckbox,
+.reg-form .iradio {
+    display: inline-block;
+		vertical-align: middle;
+		margin: 0;
+		padding: 0;
+		width: 26px;
+		height: 26px;
+		background: url(../images/checkbox.png) no-repeat;
+		border: none;
+		cursor: pointer;
+		position: absolute !important;
+		left: 0;
+		top: 0;
+}
+
+.reg-form .icheckbox {
+    background-position: 0 0;
+}
+    .reg-form .icheckbox.checked {
+        background-position: -26px 0;
+    }
+    .reg-form .icheckbox.disabled {
+        opacity:.5;
+    }
+
+.reg-form .iradio {
+    background-position: -52px 0;
+}
+    .reg-form .iradio.checked {
+        background-position: -78px 0;
+    }
+    .reg-form .iradio.disabled {
+        opacity:0;
+    }
+
+.reg-form .checkbox label,
+.reg-form .radio label {
+  padding:2px 0 0 40px;
+	min-height:26px;
+}
+
+.test-content {
+  font-size:17px;
+	line-height:26px;
+	font-weight:300;
+}
+
+.test-content .article-pic {
+  margin-top:16px;
+}
+
+.test-form h3 {
+  font-family:'PT Sans';
+	font-weight:bold;
+	color:#353b3a;
+	font-size:20px;
+	line-height:24px;
+	margin:30px 0 24px 0;
+}
+
+.sidebar h2 {
+  font-size:22px;
+	line-height:26px;
+}
+
+.sidebar .block-expandable:first-child h2 {
+  margin-top:0;
+}
+
+.search-form-2 {
+  -webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+	background: #e9e8e0;
+	padding: 18px 20px;
+	margin: 0 0 40px 0;
+}
+
+.search-form-2 .btn-default {
+  background:#51aded url(../images/ico-search-2.png) center center no-repeat;
+	width:40px;
+	height:35px;
+}
+
+.search-form-2 .search-submit {
+  float:right;
+	position:relative;
+	left:auto;
+	right:auto;
+	top:auto;
+	margin:0;
+	display:block;
+}
+
+.search-form-2 .input-wrapper {
+  overflow:hidden;
+	padding:0 14px 0 0;
+	position:relative;
+}
+
+.search-results-list {
+  max-width:650px;
+}
+
+.search-results-item {
+  margin:0 0 45px 0;
+}
+
+.search-results-item .ttl {
+  font-family:'PT Sans';
+	font-weight:bold;
+	font-size:26px;
+	line-height:30px;
+	margin:0 0 3px 0;
+}
+
+@media (max-width:779px) {
+  .search-results-item .ttl {
+		font-size:22px;
+	}
+}
+
+.search-results-item .link {
+  font-family:'PT Sans';
+	font-weight:bold;
+	font-size:15px;
+	margin:0 0 5px 0;
+}
+
+.search-results-item .link a,
+.search-results-item .link a:visited {
+  color:#545454;
+}
+
+.contacts-l {
+	width:50%;
+	float:left;
+	font-weight:300;
+	font-size:20px;
+	line-height:30px;
+}
+
+.contacts-r {
+  width:50%;
+	float:right;
+	padding:0 0 0 54px;
+	font-weight:300;
+	font-size:20px;
+	line-height:30px;
+}
+
+.contacts-pic {
+  text-align:center;
+	margin:53px 0 0 0;
+}
+
+.contacts-l .contacts-lead {
+  font-size:26px;
+	line-height:36px;
+	margin:46px 0 55px 0;
+}
+
+@media (max-width:779px) {
+  .contacts-l {
+		float:none;
+		width:auto;
+	}
+	.contacts-r {
+		float:none;
+		width:auto;
+		padding:0;
+	}
+	.contacts-pic {
+		margin:29px 0 0 0;
+	}
+	.contacts-form {
+		margin:0 0 40px 0;
+	}
+}
+
+@media (max-width:500px) {
+  .contacts-l {
+		font-size:15px;
+		line-height:20px;
+	}
+	.contacts-r {
+		padding:0;
+		font-size:15px;
+		line-height:20px;
+	}
+	.contacts-l .contacts-lead {
+		font-size:20px;
+		line-height:30px;
+	}
+}
+
+.contacts-form input[type=text],
+.contacts-form textarea {
+  resize:none;
+	border:1px solid #787e7c;
+	width:100%;
+	font-size:15px;
+	line-height:20px;
+	padding:0 15px;
+	border-radius:0;
+}
+
+.contacts-form textarea {
+  padding:7px 15px;
+}
+
+.contacts-l .form-text {
+  margin:0 0 22px 0;
+}
+
+.contacts-form input[type=text] {
+  height:42px;
+}
+
+.contacts-form .form-group {
+  margin-bottom:22px;
+}
+
+.contacts-social-buttons {
+  margin: 24px 0 34px 0;
+}
+
+.contacts-social-buttons a {
+  margin:0 26px 0 0;
+}
+
+.modal .skills-list .row {
+	margin:0;
+	padding:0;
+}
+
+.modal .skills-item {
+  float:none;
+	width:auto;
+	margin:0 0 20px -15px;
+	padding:0;
+}
+
+.user-menu-wrapper {
+  background:#51aded;
+}
+
+.user-menu {
+  font-size:16px;
+	font-weight:500;
+	margin:0;
+	padding:0 0 0 12px;
+	display:none;
+}
+
+.user-menu li {
+  list-style:none;
+	float:left;
+	margin:0 24px 0 0;
+}
+
+.user-menu a,
+.user-menu a:visited {
+  color:#fff;
+	text-decoration:none;
+	display:inline-block;
+	padding:13px 0 15px 0;
+}
+
+@media (max-width: 779px) {
+	.user-menu-wrapper {
+		position: relative;
+	}
+	.user-menu {
+		position: relative;
+		top: auto;
+		left: auto;
+		display: none;
+		margin-left: 0;
+		text-align: left;
+		width: auto;
+		margin: 0 -35px;
+		padding:0;
+		font-size:18px;
+	}
+	.user-menu li {
+		border-bottom: 1px solid #2b85d8;
+		float:none;
+		padding: 0;
+		margin:0;
+	}
+	.user-menu li a,
+	.user-menu li a:visited {
+		padding:11px 35px 13px 35px;
+	}
+}
+
+.user-menu-toggler .ico-collapse {
+  display:none;
+}
+
+.user-menu-toggler-on {
+	height:48px;
+	padding-top:19px;
+	margin-top:-13px;
+	border-radius: 0 0 4px 4px;
+}
+
+.user-menu-toggler-on img {
+  display:none;
+}
+
+.user-menu-toggler-on .ico-collapse {
+  width: 20px;
+	height: 20px;
+	margin: -4px 10px -2px 0;
+	background: url(../images/expandable-arrows.png) -7px -38px no-repeat;
+	display: inline-block;
 }
