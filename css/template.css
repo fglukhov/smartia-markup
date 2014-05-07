@@ -3,6 +3,21 @@ body {
   font-family:'Roboto';
 	min-width:320px;
 	color:#353b3a;
+	height:100%;
+}
+
+@media (min-width:900px) {
+  .top-wrap {min-height: 100%;}
+
+	.top-main {
+		overflow:auto;
+		padding-bottom: 155px;
+	}
+
+	.footer {position: relative;
+		margin-top: -155px !important;
+		height: 155px !important;
+		clear:both !important;}
 }
 
 .container {
