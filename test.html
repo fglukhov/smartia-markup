@@ -30,145 +30,151 @@
 	
 	<body>
 	
-		<div class="header">
-			<div class="header-content">
-				<div class="search-form" id="searchForm">
-					<div class="container">
-						<div class="search-form-content">
-							<form action=".">
-								<input type="text" class="search-input"/>
-								<input type="submit" class="search-submit" value=""/>
-							</form>
-						</div>
-					</div>
-				</div>
-				<div class="main-menu-wrapper">
-					<div class="container">
-						<ul class="main-menu" id="mainMenu">
-							<li><a href="#">Умения</a></li>
-							<li><a href="#">Профессии</a></li>
-							<li class="main-menu-sep">&nbsp;</li>
-							<li><a href="#">Тесты</a></li>
-							<li><a href="#">Статьи</a></li>
-						</ul>
-					</div>
-				</div>
-				<div class="header-bottom">
-					<div class="container">
-						<div class="header-bottom-content">
-							<div class="logo">
-								<a href="#"><img src="images/logo.png" alt="Смартия"/></a>
+		<div class="top-wrap">
+			<div class="top-main">
+	
+				<div class="header">
+					<div class="header-content">
+						<div class="search-form" id="searchForm">
+							<div class="container">
+								<div class="search-form-content">
+									<form action=".">
+										<input type="text" class="search-input"/>
+										<input type="submit" class="search-submit" value=""/>
+									</form>
+								</div>
 							</div>
-							<div class="btn btn-search toggler" data-togglertarget="searchForm"><img src="images/ico-search.png"/>Найти</div>
-							<div class="btn btn-menu toggler" data-togglertarget="mainMenu" data-togglertarget2="searchForm"><img src="images/ico-menu.png"/>Меню</div>
-							<div class="btn btn-default btn-login"><img src="images/ico-login.png"/>Войти</div>
+						</div>
+						<div class="main-menu-wrapper">
+							<div class="container">
+								<ul class="main-menu" id="mainMenu">
+									<li><a href="#">Умения</a></li>
+									<li><a href="#">Профессии</a></li>
+									<li class="main-menu-sep">&nbsp;</li>
+									<li><a href="#">Тесты</a></li>
+									<li><a href="#">Статьи</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="header-bottom">
+							<div class="container">
+								<div class="header-bottom-content">
+									<div class="logo">
+										<a href="#"><img src="images/logo.png" alt="Смартия"/></a>
+									</div>
+									<div class="btn btn-search toggler" data-togglertarget="searchForm"><img src="images/ico-search.png"/>Найти</div>
+									<div class="btn btn-menu toggler" data-togglertarget="mainMenu" data-togglertarget2="searchForm"><img src="images/ico-menu.png"/>Меню</div>
+									<div class="btn btn-default btn-login"><img src="images/ico-login.png"/>Войти</div>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
+				
+				<div class="body">
+					<div class="container clearfix">
+						
+						<div class="page-title clearfix">
+							<div class="super-title">
+								Тест
+							</div>
+							<h1>Профориентационная анкета</h1>
+							<div class="sub-title">
+								Начальный уровень, добавлено 23.03.14
+							</div>
+						</div>
+					
+					</div>
+					
+					<!-- Test content -->
+					
+					<div class="container test-content">
+						<p>Ориентируетесь ли вы на себя, на результат или на команду? Тест содержит 27 вопросов и полностью бесплатен.</p>
+						<div class="article-pic">
+							<img src="files/article-pic.jpg" />
+						</div>
+						
+						<div class="common-form test-form">
+						
+							<h3>1. Наибольшее удовлетворение я получаю от:</h3>
+						
+							<div class="radios">
+								<div class="radio">
+									<label>
+										<input type="radio" name="test-question-1"> Одобрения моей работы
+									</label>
+								</div>
+								<div class="radio">
+									<label>
+										<input type="radio" name="test-question-1"> Сознания того, что меня окружают друзья
+									</label>
+								</div>
+								<div class="radio">
+									<label>
+										<input type="radio" name="test-question-1"> Сознания того, что меня окружают друзья
+									</label>
+								</div>
+							</div>
+							
+							<h3>2. Если бы я играл в футбол (волейбол, баскетбол), то я хотел бы быть:</h3>
+						
+							<div class="radios">
+								<div class="radio">
+									<label>
+										<input type="radio" name="test-question-2"> Тренером, который разрабатывает тактику игры
+									</label>
+								</div>
+								<div class="radio">
+									<label>
+										<input type="radio" name="test-question-2"> Известным игроком
+									</label>
+								</div>
+								<div class="radio">
+									<label>
+										<input type="radio" name="test-question-2"> Выбранным капитаном команды
+									</label>
+								</div>
+							</div>
+							
+							<h3>3. По-моему, лучшим педагогом является тот, кто:</h3>
+						
+							<div class="radios">
+								<div class="radio">
+									<label>
+										<input type="radio" name="test-question-3"> Проявляет интерес к учащимся и к каждому имеет индивидуальный подход
+									</label>
+								</div>
+								<div class="radio">
+									<label>
+										<input type="radio" name="test-question-3"> Вызывает интерес к предмету так, что учащиеся с удовольствием углубляют свои знания в этом предмете
+									</label>
+								</div>
+								<div class="radio">
+									<label>
+										<input type="radio" name="test-question-3"> Создает в коллективе такую атмосферу, при которой никто не боится высказать свое мнение
+									</label>
+								</div>
+							</div>
+							
+							<div class="form-footer clearfix">
+								<input type="submit" value="Посмотреть результат" class="btn btn-default"/>
+							</div>
+							
+						</div>
+						
+					</div>
+					
+					
+					
+					
+					
+					
+					
+				</div>
+
 			</div>
 		</div>
-		
-		<div class="body">
-			<div class="container clearfix">
-				
-				<div class="page-title clearfix">
-					<div class="super-title">
-						Тест
-					</div>
-					<h1>Профориентационная анкета</h1>
-					<div class="sub-title">
-						Начальный уровень, добавлено 23.03.14
-					</div>
-				</div>
 			
-			</div>
-			
-			<!-- Test content -->
-			
-			<div class="container test-content">
-				<p>Ориентируетесь ли вы на себя, на результат или на команду? Тест содержит 27 вопросов и полностью бесплатен.</p>
-				<div class="article-pic">
-					<img src="files/article-pic.jpg" />
-				</div>
-				
-				<div class="common-form test-form">
-				
-					<h3>1. Наибольшее удовлетворение я получаю от:</h3>
-				
-					<div class="radios">
-						<div class="radio">
-							<label>
-								<input type="radio" name="test-question-1"> Одобрения моей работы
-							</label>
-						</div>
-						<div class="radio">
-							<label>
-								<input type="radio" name="test-question-1"> Сознания того, что меня окружают друзья
-							</label>
-						</div>
-						<div class="radio">
-							<label>
-								<input type="radio" name="test-question-1"> Сознания того, что меня окружают друзья
-							</label>
-						</div>
-					</div>
-					
-					<h3>2. Если бы я играл в футбол (волейбол, баскетбол), то я хотел бы быть:</h3>
-				
-					<div class="radios">
-						<div class="radio">
-							<label>
-								<input type="radio" name="test-question-2"> Тренером, который разрабатывает тактику игры
-							</label>
-						</div>
-						<div class="radio">
-							<label>
-								<input type="radio" name="test-question-2"> Известным игроком
-							</label>
-						</div>
-						<div class="radio">
-							<label>
-								<input type="radio" name="test-question-2"> Выбранным капитаном команды
-							</label>
-						</div>
-					</div>
-					
-					<h3>3. По-моему, лучшим педагогом является тот, кто:</h3>
-				
-					<div class="radios">
-						<div class="radio">
-							<label>
-								<input type="radio" name="test-question-3"> Проявляет интерес к учащимся и к каждому имеет индивидуальный подход
-							</label>
-						</div>
-						<div class="radio">
-							<label>
-								<input type="radio" name="test-question-3"> Вызывает интерес к предмету так, что учащиеся с удовольствием углубляют свои знания в этом предмете
-							</label>
-						</div>
-						<div class="radio">
-							<label>
-								<input type="radio" name="test-question-3"> Создает в коллективе такую атмосферу, при которой никто не боится высказать свое мнение
-							</label>
-						</div>
-					</div>
-					
-					<div class="form-footer clearfix">
-						<input type="submit" value="Посмотреть результат" class="btn btn-default"/>
-					</div>
-					
-				</div>
-				
-			</div>
-			
-			
-			
-			
-			
-			
-			
-		</div>
-		
 		<div class="footer">
 			<div class="footer-content">
 				<div class="footer-menu-trigger clearfix">

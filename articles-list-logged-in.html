@@ -30,139 +30,145 @@
 	
 	<body>
 	
-		<div class="header">
-			<div class="header-content">
-				<div class="search-form" id="searchForm">
-					<div class="container">
-						<div class="search-form-content">
-							<form action=".">
-								<input type="text" class="search-input"/>
-								<input type="submit" class="search-submit" value=""/>
-							</form>
+		<div class="top-wrap">
+			<div class="top-main">
+	
+				<div class="header">
+					<div class="header-content">
+						<div class="search-form" id="searchForm">
+							<div class="container">
+								<div class="search-form-content">
+									<form action=".">
+										<input type="text" class="search-input"/>
+										<input type="submit" class="search-submit" value=""/>
+									</form>
+								</div>
+							</div>
+						</div>
+						
+						<div class="main-menu-wrapper">
+							<div class="container">
+								<ul class="main-menu" id="mainMenu">
+									<li><a href="#">Умения</a></li>
+									<li><a href="#">Профессии</a></li>
+									<li class="main-menu-sep">&nbsp;</li>
+									<li><a href="#">Тесты</a></li>
+									<li><a href="#">Статьи</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="user-menu-wrapper">
+							<div class="container clearfix">
+								<ul class="user-menu clearfix" id="userMenu">
+									<li><a href="#">Мой профиль</a></li>
+									<li><a href="#">Мои настройки</a></li>
+									<li><a href="#">Выйти</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="header-bottom">
+							<div class="container">
+								<div class="header-bottom-content">
+									<div class="logo">
+										<a href="#"><img src="images/logo.png" alt="Смартия"/></a>
+									</div>
+									<div class="btn btn-search toggler" data-togglertarget="searchForm"><img src="images/ico-search.png"/>Найти</div>
+									<div class="btn btn-menu toggler" data-togglertarget="mainMenu" data-togglertarget2="searchForm"><img src="images/ico-menu.png"/>Меню</div>
+									<div class="btn btn-default btn-login toggler user-menu-toggler" data-togglertarget="userMenu"><img src="images/ico-login.png"/><span class="ico-collapse"></span><span class="text">Мое меню</span></div>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
 				
-				<div class="main-menu-wrapper">
-					<div class="container">
-						<ul class="main-menu" id="mainMenu">
-							<li><a href="#">Умения</a></li>
-							<li><a href="#">Профессии</a></li>
-							<li class="main-menu-sep">&nbsp;</li>
-							<li><a href="#">Тесты</a></li>
-							<li><a href="#">Статьи</a></li>
-						</ul>
-					</div>
-				</div>
-				<div class="user-menu-wrapper">
+				<div class="body">
 					<div class="container clearfix">
-						<ul class="user-menu clearfix" id="userMenu">
-							<li><a href="#">Мой профиль</a></li>
-							<li><a href="#">Мои настройки</a></li>
-							<li><a href="#">Выйти</a></li>
-						</ul>
-					</div>
-				</div>
-				<div class="header-bottom">
-					<div class="container">
-						<div class="header-bottom-content">
-							<div class="logo">
-								<a href="#"><img src="images/logo.png" alt="Смартия"/></a>
+						
+						<div class="page-title clearfix">
+							<h1>Изба-читальня</h1>
+						</div>
+						
+						<div class="col-main">
+							
+							<div class="content-filter">
+								<div class="select-item">
+									<select class="selectpicker">
+										<option>Все тексты</option>
+										<option>Статьи</option>
+										<option>Новости</option>
+										<option>Аналитика</option>
+									</select>
+								</div>
 							</div>
-							<div class="btn btn-search toggler" data-togglertarget="searchForm"><img src="images/ico-search.png"/>Найти</div>
-							<div class="btn btn-menu toggler" data-togglertarget="mainMenu" data-togglertarget2="searchForm"><img src="images/ico-menu.png"/>Меню</div>
-							<div class="btn btn-default btn-login toggler user-menu-toggler" data-togglertarget="userMenu"><img src="images/ico-login.png"/><span class="ico-collapse"></span><span class="text">Мое меню</span></div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		
-		<div class="body">
-			<div class="container clearfix">
-				
-				<div class="page-title clearfix">
-					<h1>Изба-читальня</h1>
-				</div>
-				
-				<div class="col-main">
-					
-					<div class="content-filter">
-						<div class="select-item">
-							<select class="selectpicker">
-								<option>Все тексты</option>
-								<option>Статьи</option>
-								<option>Новости</option>
-								<option>Аналитика</option>
-							</select>
-						</div>
-					</div>
-					
-					<div class="articles-list">
-						<div class="articles-list-item">
-							<div class="date">15 марта 2014</div>
-							<div class="pic"><a href="#"><img src="files/article-1.jpg" /></a></div>
-							<h3><a href="#">Михаил Котиков: Капитан технической поддержки</a></h3>
-							<div class="text">
-								<p>Организует работу отделов, принимает на работу сотрудников, обучает их, делает им хорошо</p>
-							</div>
-						</div>
-						<div class="articles-list-item">
-							<div class="date">31 марта 2014</div>
-							<div class="pic"><a href="#"><img src="files/article-2.jpg" /></a></div>
-							<h3><a href="#">Каждый раз ты шпионом проникаешь в чужой мир</a></h3>
-							<div class="text">
-								<p>Синхронист Мария Пирсон — о профессии переводчика, специально для пользователей Смартии</p>
-							</div>
-						</div>
-						<div class="articles-list-item">
-							<div class="date">15 марта 2014</div>
-							<div class="pic"><a href="#"><img src="files/article-1.jpg" /></a></div>
-							<h3><a href="#">Михаил Котиков: Капитан технической поддержки</a></h3>
-							<div class="text">
-								<p>Организует работу отделов, принимает на работу сотрудников, обучает их, делает им хорошо</p>
-							</div>
-						</div>
-					</div>
-					
-					<ul class="pagination">
-						<li><a href="#"><span class="arr">&nbsp;</span></a></li>
-						<li><a href="#">231</a></li>
-						<li class="active"><a href="#">232</a></li>
-						<li><a href="#">233</a></li>
-						<li><a href="#"><span class="arr">&nbsp;</span></a></li>
-					</ul>
-					
-				</div>
-				
-				<div class="col-r-collapsable">
-					<div class="block-expandable">
-						<h2 class="col-expandable-trigger clearfix col-title">Блог Смартии<div class="arr"></div></h2>
-						<div class="col-expandable vis-wide">
-							<div class="articles-list articles-list-small">
+							
+							<div class="articles-list">
 								<div class="articles-list-item">
 									<div class="date">15 марта 2014</div>
 									<div class="pic"><a href="#"><img src="files/article-1.jpg" /></a></div>
 									<h3><a href="#">Михаил Котиков: Капитан технической поддержки</a></h3>
+									<div class="text">
+										<p>Организует работу отделов, принимает на работу сотрудников, обучает их, делает им хорошо</p>
+									</div>
 								</div>
 								<div class="articles-list-item">
 									<div class="date">31 марта 2014</div>
 									<div class="pic"><a href="#"><img src="files/article-2.jpg" /></a></div>
 									<h3><a href="#">Каждый раз ты шпионом проникаешь в чужой мир</a></h3>
+									<div class="text">
+										<p>Синхронист Мария Пирсон — о профессии переводчика, специально для пользователей Смартии</p>
+									</div>
 								</div>
 								<div class="articles-list-item">
 									<div class="date">15 марта 2014</div>
 									<div class="pic"><a href="#"><img src="files/article-1.jpg" /></a></div>
 									<h3><a href="#">Михаил Котиков: Капитан технической поддержки</a></h3>
+									<div class="text">
+										<p>Организует работу отделов, принимает на работу сотрудников, обучает их, делает им хорошо</p>
+									</div>
+								</div>
+							</div>
+							
+							<ul class="pagination">
+								<li><a href="#"><span class="arr">&nbsp;</span></a></li>
+								<li><a href="#">231</a></li>
+								<li class="active"><a href="#">232</a></li>
+								<li><a href="#">233</a></li>
+								<li><a href="#"><span class="arr">&nbsp;</span></a></li>
+							</ul>
+							
+						</div>
+						
+						<div class="col-r-collapsable">
+							<div class="block-expandable">
+								<h2 class="col-expandable-trigger clearfix col-title">Блог Смартии<div class="arr"></div></h2>
+								<div class="col-expandable vis-wide">
+									<div class="articles-list articles-list-small">
+										<div class="articles-list-item">
+											<div class="date">15 марта 2014</div>
+											<div class="pic"><a href="#"><img src="files/article-1.jpg" /></a></div>
+											<h3><a href="#">Михаил Котиков: Капитан технической поддержки</a></h3>
+										</div>
+										<div class="articles-list-item">
+											<div class="date">31 марта 2014</div>
+											<div class="pic"><a href="#"><img src="files/article-2.jpg" /></a></div>
+											<h3><a href="#">Каждый раз ты шпионом проникаешь в чужой мир</a></h3>
+										</div>
+										<div class="articles-list-item">
+											<div class="date">15 марта 2014</div>
+											<div class="pic"><a href="#"><img src="files/article-1.jpg" /></a></div>
+											<h3><a href="#">Михаил Котиков: Капитан технической поддержки</a></h3>
+										</div>
+									</div>
 								</div>
 							</div>
 						</div>
+						
 					</div>
 				</div>
-				
+			
 			</div>
 		</div>
-		
+			
 		<div class="footer">
 			<div class="footer-content">
 				<div class="footer-menu-trigger clearfix">

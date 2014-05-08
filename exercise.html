@@ -31,171 +31,177 @@
 	
 	<body>
 	
-		<div class="header">
-			<div class="header-content">
-				<div class="search-form" id="searchForm">
-					<div class="container">
-						<div class="search-form-content">
-							<form action=".">
-								<input type="text" class="search-input"/>
-								<input type="submit" class="search-submit" value=""/>
-							</form>
-						</div>
-					</div>
-				</div>
-				<div class="main-menu-wrapper">
-					<div class="container">
-						<ul class="main-menu" id="mainMenu">
-							<li><a href="#">Умения</a></li>
-							<li><a href="#">Профессии</a></li>
-							<li class="main-menu-sep">&nbsp;</li>
-							<li><a href="#">Тесты</a></li>
-							<li><a href="#">Статьи</a></li>
-						</ul>
-					</div>
-				</div>
-				<div class="header-bottom">
-					<div class="container">
-						<div class="header-bottom-content">
-							<div class="logo">
-								<a href="#"><img src="images/logo.png" alt="Смартия"/></a>
+		<div class="top-wrap">
+			<div class="top-main">
+		
+				<div class="header">
+					<div class="header-content">
+						<div class="search-form" id="searchForm">
+							<div class="container">
+								<div class="search-form-content">
+									<form action=".">
+										<input type="text" class="search-input"/>
+										<input type="submit" class="search-submit" value=""/>
+									</form>
+								</div>
 							</div>
-							<div class="btn btn-search toggler" data-togglertarget="searchForm"><img src="images/ico-search.png"/>Найти</div>
-							<div class="btn btn-menu toggler" data-togglertarget="mainMenu" data-togglertarget2="searchForm"><img src="images/ico-menu.png"/>Меню</div>
-							<div class="btn btn-default btn-login"><img src="images/ico-login.png"/>Войти</div>
+						</div>
+						<div class="main-menu-wrapper">
+							<div class="container">
+								<ul class="main-menu" id="mainMenu">
+									<li><a href="#">Умения</a></li>
+									<li><a href="#">Профессии</a></li>
+									<li class="main-menu-sep">&nbsp;</li>
+									<li><a href="#">Тесты</a></li>
+									<li><a href="#">Статьи</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="header-bottom">
+							<div class="container">
+								<div class="header-bottom-content">
+									<div class="logo">
+										<a href="#"><img src="images/logo.png" alt="Смартия"/></a>
+									</div>
+									<div class="btn btn-search toggler" data-togglertarget="searchForm"><img src="images/ico-search.png"/>Найти</div>
+									<div class="btn btn-menu toggler" data-togglertarget="mainMenu" data-togglertarget2="searchForm"><img src="images/ico-menu.png"/>Меню</div>
+									<div class="btn btn-default btn-login"><img src="images/ico-login.png"/>Войти</div>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
+				
+				<div class="body">
+					<div class="container clearfix">
+						
+						<div class="page-title clearfix">
+							<div class="super-title">
+								Упражнение
+							</div>
+							<h1>Электронная секта</h1>
+							<div class="sub-title">
+								Начальный уровень, добавлено 23.03.14
+							</div>
+							
+							
+						</div>
+					
+					</div>
+					
+					<div class="container clearfix">
+						
+						<div class="col-main article-body">
+							<p>Вы успешно внедрились в обычную секту, поклоняющуюся святому дождевому червю? Отлично! Теперь освоим следующее упражнение и создадим для нашей новой секты прогрессивный электронный сайт.</p>
+							
+							<div class="common-form exercise-form">
+								<form action=".">
+									<div class="checkboxes">
+										<div class="checkbox">
+											<label>
+												<input type="checkbox" checked> Проверьте, установлен ли у вас Photoshop. Это очень важно.
+											</label>
+										</div>
+										<div class="checkbox">
+											<label>
+												<input type="checkbox" checked> Откройте инструкцию и установите плагин с сайта 960gs. Научитесь его использовать.
+											</label>
+										</div>
+										<div class="checkbox">
+											<label>
+												<input type="checkbox"> Если вам не нравится этот плагин, уходите отсюда, вы ничего не понимаете!
+											</label>
+										</div>
+										<div class="checkbox">
+											<label>
+												<input type="checkbox"> Загрузите скриншоты своего сайта на Смартию
+											</label>
+										</div>
+										<div class="checkbox">
+											<label>
+												<input type="checkbox"> И еще что нибудь загрузите сюда, нам тут совсем скучно
+											</label>
+										</div>
+									</div>
+									<div class="form-collapsable excercise-comment">
+										<div class="form-content">
+											<div class="form-title">Упражнение выполнено!</div>
+											<p>Отправьте нам результат текста теста, очень просим!</p>
+											<div class="form-group">
+												<textarea name="excercise_text" id="excercise_text" rows="5"></textarea>
+											</div>
+											<span class="btn btn-primary fileinput-button">
+													<i class="glyphicon glyphicon-plus"></i>
+													<span>Добавить файл</span>
+													<!-- The file input field used as target for the file upload widget -->
+													<input id="exercise_file" type="file" name="files[]" multiple>
+											</span>
+											<br>
+											<br>
+											<!-- The global progress bar -->
+											<div id="progress" class="progress">
+													<div class="progress-bar progress-bar-success"></div>
+											</div>
+											<!-- The container for the uploaded files -->
+											<div id="files" class="files"></div>
+											<div class="form-footer clearfix">
+												<input type="submit" value="Отправить сделанное" class="btn btn-default"/>
+												<div class="btn btn-primary comment-later">Пройти позже</div>
+												<div class="close"></div>
+											</div>
+										</div>
+										<div class="btn btn-default form-trigger">Сделано!</div>
+										<div class="btn btn-primary comment-later wide-invis">Пройти позже</div>
+									</div>
+								</form>
+							</div>
+						
+						</div>
+						
+						<div class="col-r-collapsable material-related-items">
+							<div class="socbuttons clearfix">
+											
+								<!-- Здесь нужно вставлять урлы текущих страниц. И вообще протестировать, чтоб нормально работало. -->
+								
+								<a class="socbutton socbutton-facebook" href="https://www.facebook.com/sharer/sharer.php&amp;u=smartia.ru" onclick="window.open(this.href, 'mywin', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;">Share</a>
+								<a class="socbutton socbutton-twitter" href="https://twitter.com/share" onclick="window.open(this.href, 'mywin', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;">Tweet</a>
+								<a class="socbutton socbutton-vkontakte" href="http://vkontakte.ru/share.php?url=http://mysite.com" onclick="window.open(this.href, 'mywin', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;">Share</a>
+								
+							</div>
+							<div class="block-expandable">
+								<h2 class="col-expandable-trigger clearfix">Развивает умения<div class="arr"></div></h2>
+								<div class="col-expandable vis-wide">
+									<div class="skills-list">
+										<div class="row">
+											<div class="skills-item">
+												<div class="pic">
+													<a href="#"><img src="images/skill-dummy-s.png"/></a>
+												</div>
+												<div class="descr">
+													<a class="skill-name" href="#">Сегментирование пользователей в GA по авинашекошевски</a>
+												</div>
+											</div>
+											<div class="skills-item">
+												<div class="pic">
+													<a href="#"><img src="images/skill-dummy-s.png"/></a>
+												</div>
+												<div class="descr">
+													<a class="skill-name" href="#">Брайан Клифтон: Advanced Web Metrics with Google Analytics</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+			
+					</div>
+					
+				</div>
+			
 			</div>
 		</div>
-		
-		<div class="body">
-			<div class="container clearfix">
-				
-				<div class="page-title clearfix">
-					<div class="super-title">
-						Упражнение
-					</div>
-					<h1>Электронная секта</h1>
-					<div class="sub-title">
-						Начальный уровень, добавлено 23.03.14
-					</div>
-					
-					
-				</div>
 			
-			</div>
-			
-			<div class="container clearfix">
-				
-				<div class="col-main article-body">
-					<p>Вы успешно внедрились в обычную секту, поклоняющуюся святому дождевому червю? Отлично! Теперь освоим следующее упражнение и создадим для нашей новой секты прогрессивный электронный сайт.</p>
-					
-					<div class="common-form exercise-form">
-						<form action=".">
-							<div class="checkboxes">
-								<div class="checkbox">
-									<label>
-										<input type="checkbox" checked> Проверьте, установлен ли у вас Photoshop. Это очень важно.
-									</label>
-								</div>
-								<div class="checkbox">
-									<label>
-										<input type="checkbox" checked> Откройте инструкцию и установите плагин с сайта 960gs. Научитесь его использовать.
-									</label>
-								</div>
-								<div class="checkbox">
-									<label>
-										<input type="checkbox"> Если вам не нравится этот плагин, уходите отсюда, вы ничего не понимаете!
-									</label>
-								</div>
-								<div class="checkbox">
-									<label>
-										<input type="checkbox"> Загрузите скриншоты своего сайта на Смартию
-									</label>
-								</div>
-								<div class="checkbox">
-									<label>
-										<input type="checkbox"> И еще что нибудь загрузите сюда, нам тут совсем скучно
-									</label>
-								</div>
-							</div>
-							<div class="form-collapsable excercise-comment">
-								<div class="form-content">
-									<div class="form-title">Упражнение выполнено!</div>
-									<p>Отправьте нам результат текста теста, очень просим!</p>
-									<div class="form-group">
-										<textarea name="excercise_text" id="excercise_text" rows="5"></textarea>
-									</div>
-									<span class="btn btn-primary fileinput-button">
-											<i class="glyphicon glyphicon-plus"></i>
-											<span>Добавить файл</span>
-											<!-- The file input field used as target for the file upload widget -->
-											<input id="exercise_file" type="file" name="files[]" multiple>
-									</span>
-									<br>
-									<br>
-									<!-- The global progress bar -->
-									<div id="progress" class="progress">
-											<div class="progress-bar progress-bar-success"></div>
-									</div>
-									<!-- The container for the uploaded files -->
-									<div id="files" class="files"></div>
-									<div class="form-footer clearfix">
-										<input type="submit" value="Отправить сделанное" class="btn btn-default"/>
-										<div class="btn btn-primary comment-later">Пройти позже</div>
-										<div class="close"></div>
-									</div>
-								</div>
-								<div class="btn btn-default form-trigger">Сделано!</div>
-								<div class="btn btn-primary comment-later wide-invis">Пройти позже</div>
-							</div>
-						</form>
-					</div>
-				
-				</div>
-				
-				<div class="col-r-collapsable material-related-items">
-					<div class="socbuttons clearfix">
-									
-						<!-- Здесь нужно вставлять урлы текущих страниц. И вообще протестировать, чтоб нормально работало. -->
-						
-						<a class="socbutton socbutton-facebook" href="https://www.facebook.com/sharer/sharer.php&amp;u=smartia.ru" onclick="window.open(this.href, 'mywin', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;">Share</a>
-						<a class="socbutton socbutton-twitter" href="https://twitter.com/share" onclick="window.open(this.href, 'mywin', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;">Tweet</a>
-						<a class="socbutton socbutton-vkontakte" href="http://vkontakte.ru/share.php?url=http://mysite.com" onclick="window.open(this.href, 'mywin', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;">Share</a>
-						
-					</div>
-					<div class="block-expandable">
-						<h2 class="col-expandable-trigger clearfix">Развивает умения<div class="arr"></div></h2>
-						<div class="col-expandable vis-wide">
-							<div class="skills-list">
-								<div class="row">
-									<div class="skills-item">
-										<div class="pic">
-											<a href="#"><img src="images/skill-dummy-s.png"/></a>
-										</div>
-										<div class="descr">
-											<a class="skill-name" href="#">Сегментирование пользователей в GA по авинашекошевски</a>
-										</div>
-									</div>
-									<div class="skills-item">
-										<div class="pic">
-											<a href="#"><img src="images/skill-dummy-s.png"/></a>
-										</div>
-										<div class="descr">
-											<a class="skill-name" href="#">Брайан Клифтон: Advanced Web Metrics with Google Analytics</a>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-	
-			</div>
-			
-		</div>
-		
 		<div class="footer">
 			<div class="footer-content">
 				<div class="footer-menu-trigger clearfix">
