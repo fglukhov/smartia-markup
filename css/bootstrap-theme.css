@@ -82,14 +82,20 @@
 	-webkit-border-radius:17px;
 	-moz-border-radius:17px;
 	border-radius:17px;
-	margin:0 24px 0 0;
 }
 
 .pagination > li:last-child > a, .pagination > li:last-child > span {
 	-webkit-border-radius:17px;
 	-moz-border-radius:17px;
 	border-radius:17px;
-	margin:0 0 0 24px;
+}
+
+.pagination .prev a {
+  margin:0 24px 0 0;
+}
+
+.pagination .next a {
+  margin:0 0 0 24px;
 }
 
 .pagination span.arr {
