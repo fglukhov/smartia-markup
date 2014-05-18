@@ -1310,10 +1310,13 @@ h2.col-title {
 }
 
 .skill-card .skill-descr {
-  font-size:20px;
-	line-height:30px;
-	font-weight:300;
-	padding:21px 0 21px 0;
+  font-size: 20px;
+	line-height: 30px;
+	font-weight: 300;
+	padding: 21px 0 21px 0;
+	display: table-cell;
+	height: 466px;
+	vertical-align: middle;
 }
 
 .skill-card .skill-descr p {
@@ -1493,19 +1496,25 @@ h2.col-title {
 }
 
 .socbuttons .socbutton {
-	display:block;
-	float:left;
+	display:inline-block;
+	/* float:left; */
 	height:35px;
 	background-image:url(../images/socbuttons.png);
 	background-repeat:no-repeat;
 	line-height:35px;
 	padding:0 12px 0 38px;
-	margin:0 10px 10px 0;
+	margin:0 6px 10px 0;
 	font-size:14px;
 	color:#fff;
 	text-decoration:none;
 	font-weight:500;
 	border-radius:6px;
+}
+
+@media (max-width:400px) {
+  .socbuttons .socbutton {
+		padding:0 9px 0 31px;
+	}
 }
 
 .socbutton-facebook {
@@ -1587,7 +1596,7 @@ h2.col-title {
 @media (max-width:579px) {
   .profession-tabs {
 		margin:0 -25px;
-		padding:0 25px;
+		padding:0 5px;
 	}
 	
 	.profession-tabs li {
@@ -2038,7 +2047,7 @@ h2.col-title {
 }
 
 .article-pic-descr {
-  font-size:13px;
+  font-size:15px;
 	line-height:20px;
 	color:#aaa899;
 	margin:0 0 32px 0;
@@ -2635,6 +2644,10 @@ h2.col-title {
 	display: inline-block;
 }
 
+.top-wrap {
+  overflow:hidden;
+}
+
 @media (min-width:900px) {
 	.top-wrap {min-height: 100%;}
 
@@ -2659,5 +2672,181 @@ h2.col-title {
 @media (max-width:779px) {
   .text-related {
 		display:none;
+	}
+}
+
+.mainpage-hello {
+  font-size:24px;
+	line-height:30px;
+	text-align:center;
+	padding:20px 0 65px 0;
+}
+
+.main-carousel-wrapper {
+	background:#f3f2ea;
+	margin:0 0 20px 0;
+}
+
+.main-carousel-wrapper .container {
+  padding:0;
+}
+
+.main-carousel .item {
+}
+
+.main-carousel img {
+  max-width:980px !important;
+	width:100% !important;
+}
+
+.main-carousel .carousel-inner {
+}
+
+.main-carousel .carousel-pic {
+  background:#89c0e4;
+	text-align:center;
+}
+
+.main-carousel .carousel-caption {
+  text-align: center;
+	position: relative;
+	left: auto;
+	right: auto;
+	bottom: auto;
+	top: auto;
+	height: 249px;
+	text-shadow: none;
+	font-size: 24px;
+	line-height: 32px;
+	color: #272c2b;
+	padding: 42px 35px 80px 35px;
+}
+
+.main-carousel .carousel-caption h2 {
+  font-weight:bold;
+	font-size:44px;
+	margin:0 0 29px 0;
+	color:#272c2b;
+}
+
+.main-carousel .carousel-indicators {
+  bottom:17px;
+}
+
+.main-carousel .carousel-indicators li {
+  width:28px;
+	height:28px;
+	background:#d8d7cc;
+	border:none;
+	border-radius:14px;
+	margin:0 1px;
+	-webkit-transition: all .2s;
+	transition: all .2s;
+}
+
+.main-carousel .carousel-indicators li.active {
+	background:#292e2d;
+}
+
+@media (max-width:579px) {
+  .main-carousel .carousel-caption {
+		font-size:18px;
+		line-height:24px;
+		padding:33px 25px 95px 25px;
+		height:292px;
+	}
+  .main-carousel .carousel-caption h2 {
+		font-size:30px;
+		line-height:33px;
+		margin:0 0 20px 0;
+	}
+	
+}
+
+@media (min-width:780px) {
+  .col-half-collapsable {
+		width:50%;
+		margin:0;
+		float:left;
+		padding:0 7% 0 0;
+	}
+	.col-half-collapsable h2 {
+		margin:35px 0 26px 88px !important;
+	}
+	.col-single-collapsable {
+		width:100%;
+		margin:0;
+	}
+	.col-single-collapsable h2 {
+		text-align:center;
+	}
+	.mainpage-professions {
+		padding-top:50px;
+	}
+	.mainpage-professions h2 {
+		margin-bottom:38px !important;
+	}
+}
+
+@media (max-width:779px) {
+  .main-carousel-wrapper {
+		margin-bottom:0;
+	}
+	.main-carousel-wrapper + .container .col-half-collapsable:first-child .block-expandable {
+		border-top:none;
+	}
+}
+
+@media (max-width:779px) {
+  .skill-descr .socbuttons {
+		text-align:center;
+	}
+}
+
+.big-reg-link,
+.big-reg-link:visited {
+	color:#fff;
+  -webkit-border-radius:6px;
+  -moz-border-radius:6px;
+  border-radius:6px;
+	background:#51aded;
+	padding:33px 20px 39px 20px;
+	margin:0 0 30px 0;
+	font-size:16px;
+	line-height:20px;
+	font-weight:500;
+	text-align:center;
+	display:block;
+}
+
+@media (max-width:779px) {
+  .big-reg-link {
+		padding:24px 20px 26px 20px;
+	}
+}
+
+.pic-404 {
+  text-align:center;
+	padding:0 0 31px 0;
+}
+
+.pic-404 img {
+  max-width:381px;
+	max-height:381px;
+	border-radius:50%;
+	width:100%;
+}
+
+.text-404 {
+  font-size:20px;
+	line-height:30px;
+	text-align:center;
+	padding:0 0 30px 0;
+}
+
+@media (max-width:499px) {
+  .text-404 {
+		font-size:18px;
+		line-height:24px;
 	}
 }

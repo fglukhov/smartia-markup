@@ -5,11 +5,11 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 
-		<title>Smartia</title>
-
+		<title>Смартия</title>
+		
 		<link href='http://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic,500,500italic,700,700italic&subset=cyrillic' rel='stylesheet' type='text/css'>
 		<link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic&subset=cyrillic' rel='stylesheet' type='text/css'>
-		
+
 		<link href="css/bootstrap.css" rel="stylesheet">
 		<link href="css/bootstrap-theme.css" rel="stylesheet">
 		<link href="css/bootstrap-select.css" rel="stylesheet">
@@ -30,7 +30,308 @@
 	
 	<body>
 	
-		<button class="btn btn-primary">Кнопка</button>
+		<div class="top-wrap">
+			<div class="top-main">
+	
+				<div class="header">
+					<div class="header-content">
+						<div class="search-form" id="searchForm">
+							<div class="container">
+								<div class="search-form-content">
+									<form action=".">
+										<input type="text" class="search-input"/>
+										<input type="submit" class="search-submit" value=""/>
+									</form>
+								</div>
+							</div>
+						</div>
+						<div class="main-menu-wrapper">
+							<div class="container">
+								<ul class="main-menu" id="mainMenu">
+									<li><a href="#">Умения</a></li>
+									<li><a href="#">Профессии</a></li>
+									<li class="main-menu-sep">&nbsp;</li>
+									<li><a href="#">Тесты</a></li>
+									<li><a href="#">Статьи</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="header-bottom">
+							<div class="container">
+								<div class="header-bottom-content">
+									<div class="logo">
+										<a href="#"><img src="images/logo.png" alt="Смартия"/></a>
+									</div>
+									<div class="btn btn-search toggler" data-togglertarget="searchForm"><img src="images/ico-search.png"/>Найти</div>
+									<div class="btn btn-menu toggler" data-togglertarget="mainMenu" data-togglertarget2="searchForm"><img src="images/ico-menu.png"/>Меню</div>
+									<div class="btn btn-default btn-login"><img src="images/ico-login.png"/>Войти</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="body">
+					<div class="container clearfix">
+						
+						<div class="mainpage-hello">
+							Привет! Это Смартия, место, где знакомятся<br />с разными <a href="#">профессиями</a> и нужными для них <a href="#">умениями</a>
+						</div>
+						
+					</div>
+						
+					<div class="main-carousel-wrapper">
+						<div id="mainCarousel" class="main-carousel carousel slide" data-ride="carousel">
+							<!-- Indicators -->
+							<ol class="carousel-indicators">
+								<li data-target="#mainCarousel" data-slide-to="0" class="active"></li>
+								<li data-target="#mainCarousel" data-slide-to="1"></li>
+								<li data-target="#mainCarousel" data-slide-to="2"></li>
+							</ol>
+						
+							<!-- Wrapper for slides -->
+							<div class="carousel-inner">
+								<div class="item active">
+									<div class="carousel-pic">
+										<img src="images/main-slide-1.png">
+									</div>
+									<div class="carousel-caption">
+										<h2>Ищете занятие по душе?</h2>
+										<p>Сжатые описания и подробные рассказы<br />профессионалов помогут выбрать.</p>
+									</div>
+								</div>
+								<div class="item">
+									<div class="carousel-pic">
+										<img src="images/main-slide-2.png">
+									</div>
+									<div class="carousel-caption">
+										<h2>Заголовок второго слайда</h2>
+										<p>Описание, в макете не было, но я сам придумал.</p>
+									</div>
+								</div>
+								<div class="item">
+									<div class="carousel-pic">
+										<img src="images/main-slide-3.png">
+									</div>
+									<div class="carousel-caption">
+										<h2>Третий слайд</h2>
+										<p>Маленькое описание.</p>
+									</div>
+								</div>
+							</div>
+							
+						</div>
+						
+					</div>
+					
+					<div class="container clearfix">
+						<div class="col-r-collapsable col-half-collapsable">
+							<div class="block-expandable">
+								<h2 class="col-expandable-trigger col-expandable-trigger-on clearfix">Более 5000 текстов<div class="arr"></div></h2>
+								<div class="col-expandable vis-wide" style="display:block;">
+									<div class="materials-list">
+										<div class="row">
+											<div class="materials-item">
+												<div class="pic">
+													<a href="#"><img src="images/skill-dummy-s.png"></a>
+												</div>
+												<div class="descr">
+													<a class="material-name" href="#">Повышать конверсию сайта</a>
+													<a class="material-short" href="#">Конверсия показывает, насколько хорош проект, чем выше конверсия, тем лучше живется пользователям и владельцам сайта</a>
+												</div>
+											</div>
+											<div class="materials-item">
+												<div class="pic">
+													<a href="#"><img src="images/skill-dummy-s.png"></a>
+												</div>
+												<div class="descr">
+													<a class="material-name" href="#">Анализировать результаты рекламных кампаний в Интернет</a>
+													<a class="material-short" href="#">Всегда поможет разобраться, окупились ли вложения в интернет рекламу</a>
+												</div>
+											</div>
+											<div class="materials-item">
+												<div class="pic">
+													<a href="#"><img src="images/skill-dummy-s.png"></a>
+												</div>
+												<div class="descr">
+													<a class="material-name" href="#">Google Analytics</a>
+													<a class="material-short" href="#">Самая популярная среди лучших систем сбора и анализа данных</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-r-collapsable col-half-collapsable">
+							<div class="block-expandable">
+								<h2 class="col-expandable-trigger col-expandable-trigger-on clearfix">Около 90 умений<div class="arr"></div></h2>
+								<div class="col-expandable vis-wide" style="display:block;">
+									<div class="materials-list">
+										<div class="row">
+											<div class="materials-item">
+												<div class="pic">
+													<a href="#"><img src="images/skill-dummy-s.png"></a>
+												</div>
+												<div class="descr">
+													<a class="material-name" href="#">Анализировать результаты рекламных кампаний в Интернет</a>
+													<a class="material-short" href="#">Всегда поможет разобраться, окупились ли вложения в интернет рекламу</a>
+												</div>
+											</div>
+											<div class="materials-item">
+												<div class="pic">
+													<a href="#"><img src="images/skill-dummy-s.png"></a>
+												</div>
+												<div class="descr">
+													<a class="material-name" href="#">Google Analytics</a>
+													<a class="material-short" href="#">Самая популярная среди лучших систем сбора и анализа данных</a>
+												</div>
+											</div>
+											<div class="materials-item">
+												<div class="pic">
+													<a href="#"><img src="images/skill-dummy-s.png"></a>
+												</div>
+												<div class="descr">
+													<a class="material-name" href="#">Яндекс-метрика</a>
+													<a class="material-short" href="#">Популярная в России система интернет аналитики. Лучше всех подходит для первого знакомства с профессией</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<div class="container mainpage-professions">
+						<div class="col-r-collapsable col-single-collapsable">
+							<div class="block-expandable">
+								<h2 class="col-expandable-trigger col-expandable-trigger-on clearfix">У нас много профессий и все ждут вас:<div class="arr"></div></h2>
+								<div class="col-expandable vis-wide" style="display:block;">
+									<div class="skills-list skills-list-all">
+							
+										<div class="row clearfix">
+										
+											<div class="professions-item">
+												<div class="pic">
+													<a href="#"><img src="images/skill-dummy.png"/></a>
+												</div>
+												<div class="descr">
+													<a class="skill-name" href="#">Веб аналитик</a>
+												</div>
+											</div>
+											<div class="professions-item">
+												<div class="pic">
+													<a href="#"><img src="images/skill-dummy.png"/></a>
+												</div>
+												<div class="descr">
+													<a class="skill-name" href="#">Менеджер сообществ</a>
+												</div>
+											</div>
+											<div class="clearfix vis-before-780"></div>
+											<div class="professions-item">
+												<div class="pic">
+													<a href="#"><img src="images/skill-dummy.png"/></a>
+												</div>
+												<div class="descr">
+													<a class="skill-name" href="#">Владелец крупной транснациональной нефтяной корпорации</a>
+												</div>
+											</div>
+											<div class="clearfix vis-780"></div>
+											<div class="professions-item">
+												<div class="pic">
+													<a href="#"><img src="images/skill-dummy.png"/></a>
+												</div>
+												<div class="descr">
+													<a class="skill-name" href="#">Автомеханик</a>
+												</div>
+											</div>
+											<div class="clearfix vis-before-780"></div>
+											<div class="professions-item">
+												<div class="pic">
+													<a href="#"><img src="images/skill-dummy.png"/></a>
+												</div>
+												<div class="descr">
+													<a class="skill-name" href="#">Копирайтер от бога</a>
+												</div>
+											</div>
+											<div class="professions-item">
+												<div class="pic">
+													<a href="#"><img src="images/skill-dummy.png"/></a>
+												</div>
+												<div class="descr">
+													<a class="skill-name" href="#">Фоторграф</a>
+												</div>
+											</div>
+											<div class="clearfix vis-before-780"></div>
+											<div class="clearfix vis-780"></div>
+											
+											
+											<div class="clearfix vis-before-780"></div>
+										
+										</div>
+									
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<div class="container">
+						<a href="#" class="big-reg-link">
+							Зарегистрируйтесь! — и получите доступ ко всем возможностям Смартии!
+						</a>
+					</div>
+					
+				</div>
+			
+			</div>
+		</div>
+			
+		<div class="footer">
+			<div class="footer-content">
+				<div class="footer-menu-trigger clearfix">
+					<div class="container">
+						<div class="footer-menu-trigger-content">
+							<div class="footer-menu-toggler toggler" data-togglertarget="footerMenu">
+								Меню
+								<div class="btn btn-footer-menu"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="footer-menu-wrapper">
+					<div class="container">
+						<ul class="footer-menu" id="footerMenu">
+							<li><a href="#">Наш блог</a></li>
+							<li><a href="#">О Смартии</a></li>
+							<li><a href="#">Умения</a></li>
+							<li><a href="#">Профессии</a></li>
+							<li><a href="#">Тесты</a></li>
+							<li><a href="#">Статьи</a></li>
+							<li><a href="#">Обратная связь</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="footer-bottom">
+					<div class="container">
+						<div class="footer-soclinks clearfix">
+							<a href="#" class="sn-ico ico-fb"></a>
+							<a href="#" class="sn-ico ico-twitter"></a>
+							<a href="#" class="sn-ico ico-ok"></a>
+							<a href="#" class="sn-ico ico-vk"></a>
+						</div>
+						<div class="footer-legal">
+							<a href="#">Правила распространения материалов Smartia.ru</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!-- <div style="height:500px;"></div> -->
+	
+		
 		
 		<!-- Bootstrap core JavaScript
 		================================================== -->

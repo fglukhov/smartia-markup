@@ -1,5 +1,7 @@
 ﻿$(document).ready(function() {
 
+	$('.main-carousel').carousel()
+
 	$(".user-menu-toggler").click(function() {
 		$(this).toggleClass("user-menu-toggler-on")
 		if ($(this).hasClass("user-menu-toggler-on")) {
