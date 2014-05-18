@@ -1315,8 +1315,13 @@ h2.col-title {
 	font-weight: 300;
 	padding: 21px 0 21px 0;
 	display: table-cell;
-	height: 466px;
 	vertical-align: middle;
+}
+
+@media (min-width:780px) {
+  .skill-card .skill-descr {
+		height:466px;
+	}
 }
 
 .skill-card .skill-descr p {
@@ -2680,6 +2685,24 @@ h2.col-title {
 	line-height:30px;
 	text-align:center;
 	padding:20px 0 65px 0;
+}
+
+.vis-mob {
+  display:none;
+}
+
+@media (max-width:579px) {
+  .mainpage-hello {
+		font-size:18px;
+		line-height:24px;
+		padding:5px 0 30px 0;
+	}
+	.vis-mob {
+		display:block;
+	}
+	.invis-mob {
+		display:none;
+	}
 }
 
 .main-carousel-wrapper {
