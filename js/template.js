@@ -7,7 +7,7 @@
 		if ($(this).hasClass("user-menu-toggler-on")) {
 			$(this).find(".text").html("Свернуть")
 		} else {
-			$(this).find(".text").html("Мое меню")
+			$(this).find(".text").html("Моё")
 		}
 	});
 

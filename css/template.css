@@ -10,6 +10,11 @@ body {
   min-width:300px;
 }
 
+a.btn:visited
+{
+    color:white;
+}
+
 a,
 a:visited {
   color:#2b85d8;
@@ -1670,6 +1675,7 @@ h2.col-title {
 
 .form-collapsable .close,
 .prof-modal .close,
+.reg-modal .close,
 .reply-form .close {
   width:19px;
 	height:19px;
@@ -2323,10 +2329,6 @@ h2.col-title {
 	line-height:24px;
 }
 
-.reg-form .checkbox {
-  margin-bottom:17px;
-	min-height:26px;
-}
 
 .reg-form .icheckbox,
 .reg-form .iradio {
@@ -2334,9 +2336,9 @@ h2.col-title {
 		vertical-align: middle;
 		margin: 0;
 		padding: 0;
-		width: 26px;
-		height: 26px;
-		background: url(../images/checkbox.png) no-repeat;
+		width: 36px;
+		height: 36px;
+		background: url(../images/checkbox-3.png) no-repeat;
 		border: none;
 		cursor: pointer;
 		position: absolute !important;
@@ -2348,27 +2350,23 @@ h2.col-title {
     background-position: 0 0;
 }
     .reg-form .icheckbox.checked {
-        background-position: -26px 0;
+        background-position: -36px 0;
     }
-    .reg-form .icheckbox.disabled {
+    .icheckbox.disabled {
         opacity:.5;
     }
 
+
 .reg-form .iradio {
-    background-position: -52px 0;
+    background-position: -72px 0;
 }
-    .reg-form .iradio.checked {
-        background-position: -78px 0;
+    .iradio.checked {
+        background-position: -108px 0;
     }
-    .reg-form .iradio.disabled {
+    .iradio.disabled {
         opacity:0;
     }
 
-.reg-form .checkbox label,
-.reg-form .radio label {
-  padding:2px 0 0 40px;
-	min-height:26px;
-}
 
 .test-content {
   font-size:17px;
@@ -2570,6 +2568,20 @@ h2.col-title {
 	width:auto;
 	margin:0 0 20px -15px;
 	padding:0;
+}
+
+.reg-modal img {
+    width: 100%;
+}
+
+.reg-modal {
+    font-size: 17px;
+    line-height: 26px;
+    font-weight: 300;
+}
+
+.reg-modal .close{
+    display: block;
 }
 
 .user-menu-wrapper {
@@ -2872,4 +2884,15 @@ h2.col-title {
 		font-size:18px;
 		line-height:24px;
 	}
+}
+
+.errorlist
+{
+    color:red;
+    list-style-type: none;
+
+}
+.errorlist li:before {
+    content: "▼";
+    margin-right: 6px;
 }
