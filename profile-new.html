@@ -1,0 +1,805 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<title>Смартия - Профиль</title>
+		
+		<link href='http://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic,500,500italic,700,700italic&subset=cyrillic' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic&subset=cyrillic' rel='stylesheet' type='text/css'>
+
+		<link href="css/bootstrap.css" rel="stylesheet">
+		<link href="css/bootstrap-theme.css" rel="stylesheet">
+		<link href="css/bootstrap-select.css" rel="stylesheet">
+		<link href="css/icheck.css" rel="stylesheet">
+		<link href="css/template.css" rel="stylesheet">
+
+		<!--[if lt IE 9]><![endif]-->
+
+		<!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+			<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+
+		<!-- Favicons -->
+    <link rel="shortcut icon" href="../assets/ico/favicon.ico">
+
+  </head>
+	
+	<body>
+	
+		<div class="top-wrap">
+			<div class="top-main">
+	
+				<div class="header">
+					<div class="header-content">
+						<div class="search-form" id="searchForm">
+							<div class="container">
+								<div class="search-form-content">
+									<form action=".">
+										<input type="text" class="search-input"/>
+										<input type="submit" class="search-submit" value=""/>
+									</form>
+								</div>
+							</div>
+						</div>
+						<div class="main-menu-wrapper">
+							<div class="container">
+								<ul class="main-menu" id="mainMenu">
+									<li><a href="#">Умения</a></li>
+									<li><a href="#">Профессии</a></li>
+									<li class="main-menu-sep">&nbsp;</li>
+									<li><a href="#">Тесты</a></li>
+									<li><a href="#">Статьи</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="header-bottom">
+							<div class="container">
+								<div class="header-bottom-content">
+									<div class="logo">
+										<a href="#"><img src="images/logo.png" alt="Смартия"/></a>
+									</div>
+									<div class="btn btn-search toggler" data-togglertarget="searchForm"><img src="images/ico-search.png"/>Найти</div>
+									<div class="btn btn-menu toggler" data-togglertarget="mainMenu" data-togglertarget2="searchForm"><img src="images/ico-menu.png"/>Меню</div>
+									<div class="btn btn-default btn-login"><img src="images/ico-login.png"/>Войти</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="body">
+					<div class="container clearfix">
+						
+						<div class="page-title clearfix">
+							<h1 class="narrow-center">Венниамин Нокиреивичич</h1>
+							<div class="user-status user-status-expert narrow-center">Эксперт</div>
+						</div>
+						
+						<div class="col-l">
+							
+							<div class="user-profile-data">
+							
+								<div class="profile-pic">
+									<img src="images/userpic-dummy-big.jpg"/>
+								</div>
+								
+								<div class="profile-soclinks">
+									<div><a href="#" class="sn-ico-2 ico-fb-2"></a></div>
+									<div><a href="#" class="sn-ico-2 ico-twitter-2"></a></div>
+									<!-- <div><a href="#" class="sn-ico-2 ico-ok-2"></a></div>
+									<div><a href="#" class="sn-ico-2 ico-vk-2"></a></div> -->
+									<div><a href="#" class="sn-ico-2 ico-unknown-2"></a></div>
+								</div>
+								
+								<div class="user-buttons clearfix">
+									<div class="btn btn-default btn-big user-btn-left" data-toggle="modal" data-target="#user_event_add">
+										Добавить<br />событие
+									</div>
+									<div class="btn btn-default btn-big user-btn-right">
+										Изменить<br />мой профиль
+									</div>
+									
+									<!-- Всплывающее окно добавления события -->
+								
+									<div class="modal modal-alt fade" id="user_event_add" tabindex="-1" role="dialog"  aria-hidden="true">
+										<div class="modal-dialog">
+											<div class="modal-content">
+												<div class="modal-header">
+													
+													<h4 class="modal-title">Добавить событие</h4>
+												</div>
+												<form action=".">
+												<div class="modal-body">
+													<div class="add-event-content clearfix">
+														<div class="add-event-descr">
+															<p>Вы можете вести хронику своих учебных событий: добавлять сюда учебные заведения, тренинги, конференции, смены профессий и другие важные моменты.  И, конечно, знакомство с умениями Смартии!</p>
+														</div>
+														<div class="add-event-form">
+															<div class="form-group">
+																<label for="event_when">Когда это было?</label>
+																<input type="text" class="form-control" id="event_when" required >
+															</div>
+															<div class="form-group">
+																<label for="event_what">Что это было?</label>
+																<input type="text" class="form-control" id="event_what" required >
+															</div>
+															<div class="form-group">
+																<label for="event_descr" >Описание, название и другие подробности</label>
+																<textarea id="event_descr" rows="5"></textarea>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="modal-footer">
+													<div class="clearfix">
+														<button type="button" class="modal-alt-button modal-alt-close half-width" data-dismiss="modal" aria-hidden="true">Закрыть</button>
+														<button type="submit" class="modal-alt-button modal-alt-submit half-width">Добавить</button>
+													</div>
+												</div>
+												</form>
+											</div>
+										</div>
+									</div>
+									
+									<!-- Всплывающее окно добавления события END -->
+									
+									<!-- Всплывающее окно изменения события -->
+								
+									<div class="modal modal-alt fade" id="user_event_change" tabindex="-1" role="dialog"  aria-hidden="true">
+										<div class="modal-dialog">
+											<div class="modal-content">
+												<div class="modal-header">
+													
+													<h4 class="modal-title">Изменить событие</h4>
+												</div>
+												<form action=".">
+												<div class="modal-body">
+													<div class="add-event-content clearfix">
+														<div class="add-event-form add-event-form-wide">
+															<div class="form-group">
+																<label for="change_event_when">Когда это было?</label>
+																<input type="text" class="form-control" id="change_event_when" required >
+															</div>
+															<div class="form-group">
+																<label for="change_event_what">Что это было?</label>
+																<input type="text" class="form-control" id="change_event_what" required >
+															</div>
+															<div class="form-group">
+																<label for="change_event_descr" >Описание, название и другие подробности</label>
+																<textarea id="change_event_descr" rows="5"></textarea>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="modal-footer">
+													<div class="clearfix">
+														<button type="button" class="modal-alt-button modal-alt-remove third-width" data-dismiss="modal" aria-hidden="true">Удалить</button>
+														<button type="button" class="modal-alt-button modal-alt-close third-width" data-dismiss="modal" aria-hidden="true">Закрыть</button>
+														<button type="submit" class="modal-alt-button modal-alt-submit third-width">Сохранить</button>
+													</div>
+												</div>
+												</form>
+											</div>
+										</div>
+									</div>
+									
+									<!-- Всплывающее окно изменения события END -->
+									
+								</div>
+							
+							</div>
+							
+							<div class="block-expandable">
+								<h2 class="col-expandable-trigger invis-wide clearfix">События <span>(</span>30<span>)</span><div class="arr"></div></h2>
+								<div class="col-expandable vis-wide">
+									<div class="user-events-hint">
+										Чтобы изменить или удалить событие нажмите на него в списке:
+									</div>
+									
+									<div id="userEventsCarousel" class="carousel slide user-events-carousel" data-ride="carousel">
+									
+										<!-- Wrapper for slides -->
+										<div class="carousel-inner" role="listbox">
+											<div class="item active">
+												<div class="user-events-item" data-toggle="modal" data-target="#user_event_change">
+													<div class="date">
+														Сентябрь 2014
+													</div>
+													<div class="text">
+														<p>Освоил умение «Фотошопить прототипы»</p>
+													</div>
+												</div>
+												<div class="user-events-item" data-toggle="modal" data-target="#user_event_change">
+													<div class="date">
+														Сентябрь 2014
+													</div>
+													<div class="text">
+														<p>Пришел на Смартию</p>
+													</div>
+												</div>
+												<div class="user-events-item" data-toggle="modal" data-target="#user_event_change">
+													<div class="date">
+														Сентябрь 2014
+													</div>
+													<div class="text">
+														<p>Прошел тренинг «Укрощение сусликов в условиях, приближенных к боевым»</p>
+													</div>
+												</div>
+												<div class="user-events-item" data-toggle="modal" data-target="#user_event_change">
+													<div class="date">
+														Сентябрь 2014
+													</div>
+													<div class="text">
+														<p>Освоил умение «Фотошопить прототипы»</p>
+													</div>
+												</div>
+												<div class="user-events-item" data-toggle="modal" data-target="#user_event_change">
+													<div class="date">
+														Сентябрь 2014
+													</div>
+													<div class="text">
+														<p>Пришел на Смартию</p>
+													</div>
+												</div>
+											</div>
+											<div class="item">
+												<div class="user-events-item" data-toggle="modal" data-target="#user_event_change">
+													<div class="date">
+														Сентябрь 2014
+													</div>
+													<div class="text">
+														<p>Освоил умение «Фотошопить прототипы»</p>
+													</div>
+												</div>
+												<div class="user-events-item" data-toggle="modal" data-target="#user_event_change">
+													<div class="date">
+														Сентябрь 2014
+													</div>
+													<div class="text">
+														<p>Пришел на Смартию</p>
+													</div>
+												</div>
+												<div class="user-events-item" data-toggle="modal" data-target="#user_event_change">
+													<div class="date">
+														Сентябрь 2014
+													</div>
+													<div class="text">
+														<p>Прошел тренинг «Укрощение сусликов в условиях, приближенных к боевым»</p>
+													</div>
+												</div>
+												<div class="user-events-item" data-toggle="modal" data-target="#user_event_change">
+													<div class="date">
+														Сентябрь 2014
+													</div>
+													<div class="text">
+														<p>Освоил умение «Фотошопить прототипы»</p>
+													</div>
+												</div>
+												<div class="user-events-item" data-toggle="modal" data-target="#user_event_change">
+													<div class="date">
+														Сентябрь 2014
+													</div>
+													<div class="text">
+														<p>Пришел на Смартию</p>
+													</div>
+												</div>
+											</div>
+											<div class="item">
+												<div class="user-events-item" data-toggle="modal" data-target="#user_event_change">
+													<div class="date">
+														Сентябрь 2014
+													</div>
+													<div class="text">
+														<p>Освоил умение «Фотошопить прототипы»</p>
+													</div>
+												</div>
+												<div class="user-events-item" data-toggle="modal" data-target="#user_event_change">
+													<div class="date">
+														Сентябрь 2014
+													</div>
+													<div class="text">
+														<p>Пришел на Смартию</p>
+													</div>
+												</div>
+												<div class="user-events-item" data-toggle="modal" data-target="#user_event_change">
+													<div class="date">
+														Сентябрь 2014
+													</div>
+													<div class="text">
+														<p>Прошел тренинг «Укрощение сусликов в условиях, приближенных к боевым»</p>
+													</div>
+												</div>
+												<div class="user-events-item" data-toggle="modal" data-target="#user_event_change">
+													<div class="date">
+														Сентябрь 2014
+													</div>
+													<div class="text">
+														<p>Освоил умение «Фотошопить прототипы»</p>
+													</div>
+												</div>
+												<div class="user-events-item" data-toggle="modal" data-target="#user_event_change">
+													<div class="date">
+														Сентябрь 2014
+													</div>
+													<div class="text">
+														<p>Пришел на Смартию</p>
+													</div>
+												</div>
+											</div>
+											<div class="item">
+												<div class="user-events-item" data-toggle="modal" data-target="#user_event_change">
+													<div class="date">
+														Сентябрь 2014
+													</div>
+													<div class="text">
+														<p>Освоил умение «Фотошопить прототипы»</p>
+													</div>
+												</div>
+												<div class="user-events-item" data-toggle="modal" data-target="#user_event_change">
+													<div class="date">
+														Сентябрь 2014
+													</div>
+													<div class="text">
+														<p>Пришел на Смартию</p>
+													</div>
+												</div>
+												<div class="user-events-item" data-toggle="modal" data-target="#user_event_change">
+													<div class="date">
+														Сентябрь 2014
+													</div>
+													<div class="text">
+														<p>Прошел тренинг «Укрощение сусликов в условиях, приближенных к боевым»</p>
+													</div>
+												</div>
+												<div class="user-events-item" data-toggle="modal" data-target="#user_event_change">
+													<div class="date">
+														Сентябрь 2014
+													</div>
+													<div class="text">
+														<p>Освоил умение «Фотошопить прототипы»</p>
+													</div>
+												</div>
+												<div class="user-events-item" data-toggle="modal" data-target="#user_event_change">
+													<div class="date">
+														Сентябрь 2014
+													</div>
+													<div class="text">
+														<p>Пришел на Смартию</p>
+													</div>
+												</div>
+											</div>
+											<div class="item">
+												<div class="user-events-item" data-toggle="modal" data-target="#user_event_change">
+													<div class="date">
+														Сентябрь 2014
+													</div>
+													<div class="text">
+														<p>Освоил умение «Фотошопить прототипы»</p>
+													</div>
+												</div>
+												<div class="user-events-item" data-toggle="modal" data-target="#user_event_change">
+													<div class="date">
+														Сентябрь 2014
+													</div>
+													<div class="text">
+														<p>Пришел на Смартию</p>
+													</div>
+												</div>
+												<div class="user-events-item" data-toggle="modal" data-target="#user_event_change">
+													<div class="date">
+														Сентябрь 2014
+													</div>
+													<div class="text">
+														<p>Прошел тренинг «Укрощение сусликов в условиях, приближенных к боевым»</p>
+													</div>
+												</div>
+												<div class="user-events-item" data-toggle="modal" data-target="#user_event_change">
+													<div class="date">
+														Сентябрь 2014
+													</div>
+													<div class="text">
+														<p>Освоил умение «Фотошопить прототипы»</p>
+													</div>
+												</div>
+												<div class="user-events-item" data-toggle="modal" data-target="#user_event_change">
+													<div class="date">
+														Сентябрь 2014
+													</div>
+													<div class="text">
+														<p>Пришел на Смартию</p>
+													</div>
+												</div>
+											</div>
+											<div class="item">
+												<div class="user-events-item" data-toggle="modal" data-target="#user_event_change">
+													<div class="date">
+														Сентябрь 2014
+													</div>
+													<div class="text">
+														<p>Освоил умение «Фотошопить прототипы»</p>
+													</div>
+												</div>
+												<div class="user-events-item" data-toggle="modal" data-target="#user_event_change">
+													<div class="date">
+														Сентябрь 2014
+													</div>
+													<div class="text">
+														<p>Пришел на Смартию</p>
+													</div>
+												</div>
+												<div class="user-events-item" data-toggle="modal" data-target="#user_event_change">
+													<div class="date">
+														Сентябрь 2014
+													</div>
+													<div class="text">
+														<p>Прошел тренинг «Укрощение сусликов в условиях, приближенных к боевым»</p>
+													</div>
+												</div>
+												<div class="user-events-item" data-toggle="modal" data-target="#user_event_change">
+													<div class="date">
+														Сентябрь 2014
+													</div>
+													<div class="text">
+														<p>Освоил умение «Фотошопить прототипы»</p>
+													</div>
+												</div>
+												<div class="user-events-item" data-toggle="modal" data-target="#user_event_change">
+													<div class="date">
+														Сентябрь 2014
+													</div>
+													<div class="text">
+														<p>Пришел на Смартию</p>
+													</div>
+												</div>
+											</div>
+										</div>
+									
+										<!-- Controls -->
+										<a class="left carousel-control" href="#userEventsCarousel" role="button" data-slide="prev">
+										</a>
+										<a class="right carousel-control" href="#userEventsCarousel" role="button" data-slide="next">
+										</a>
+										
+										<!-- Counter -->
+										
+										<div class="carousel-counter">
+											<span class="range"></span> из <span class="total"></span>
+										</div>
+										
+									</div>
+								</div>
+							</div>
+								
+							
+							
+						</div>
+						
+						<div class="col-r-collapsable col-r-collapsable-wide">
+							<div class="block-expandable">
+								<h2 class="col-expandable-trigger invis-wide clearfix">О себе<div class="arr"></div></h2>
+								<div class="col-expandable vis-wide">
+									<div class="user-about-text">
+										<p>Операторы расширенного поиска – это слова и символы запроса, с помощью которых при поиске в Gmail выполняются определенные действия. Такие операторы позволяют быстро найти именно то, что нужно. Их также можно использовать при создании фильтров для автоматической сортировки входящих писем. Ниже перечислены самые полезные операторы.</p>
+									</div>
+								</div>
+							</div>
+							<div class="block-expandable">
+								<h2 class="col-expandable-trigger invis-wide clearfix">Награды <span>(</span>4<span>)</span><div class="arr"></div></h2>
+								<div class="col-expandable vis-wide">
+									<div class="user-awards clearfix">
+										<div class="user-awards-item">
+											<div class="user-level user-level-5">
+												<div class="ttl">Уровень</div>
+												<div class="val">5</div>
+											</div>
+										</div>
+										<div class="user-awards-item">
+											<div class="award-ico">
+												<img src="files/award-goodboy.png"/>
+											</div>
+											<div class="award-name">
+												Отличник
+											</div>
+										</div>
+										<div class="user-awards-item">
+											<div class="award-ico">
+												<img src="files/award-investor-8.png"/>
+											</div>
+											<div class="award-name">
+												Вкладчик
+											</div>
+										</div>
+										<div class="user-awards-item" data-toggle="modal" data-target="#award_smartian_modal">
+											<div class="award-ico">
+												<img src="files/award-smartian.png"/>
+											</div>
+											<div class="award-name">
+												Смартианец
+											</div>
+										</div>
+										
+									</div>
+								</div>
+							</div>
+							<!-- Окна с наградами нужно по возможности располагать здесь, иначе они могут исчезать при сужении окна, так как контейнер с наградами сворачивается. -->
+							<!-- Всплывающее окно награды -->
+								
+							<div class="modal modal-alt fade" id="award_smartian_modal" tabindex="-1" role="dialog"  aria-hidden="true">
+								<div class="modal-dialog">
+									<div class="modal-content">
+										<div class="modal-header">
+											<div class="award-modal-header">
+												У вас новая награда
+											</div>
+										</div>
+										<form action=".">
+										<div class="modal-body">
+											<div class="award-modal-content clearfix">
+												<div class="award-modal-pic">
+													<img src="files/award-smartian-big.png" alt="Смартианец"/>
+												</div>
+												<div class="award-modal-descr">
+													<h4>Смартианец</h4>
+													<p>Операторы расширенного поиска – это слова и символы запроса, с помощью которых при поиске в Gmail выполняются определенные действия. Такие операторы позволяют быстро найти именно то, что нужно. Их также можно использовать при создании фильтров для автоматической сортировки входящих писем. Ниже перечислены самые полезные операторы.</p>
+												</div>
+											</div>
+										</div>
+										<div class="modal-footer">
+											<div class="clearfix">
+												<button type="button" class="modal-alt-button modal-alt-close" data-dismiss="modal" aria-hidden="true">Закрыть</button>
+											</div>
+										</div>
+										</form>
+									</div>
+								</div>
+							</div>
+							
+							<!-- Всплывающее окно награды END -->
+							<div class="skills-list">
+								<div class="block-expandable">
+									<h2 class="col-expandable-trigger clearfix">Профессии <span>(</span>2<span>)</span><div class="arr"></div></h2>
+									<div class="col-expandable vis-wide">
+										<div class="row">
+											<div class="skills-item">
+												<div class="pic">
+													<a href="#"><img src="images/skill-dummy-s.png"/></a>
+													<div class="skill-badge skill-badge-familiar"></div>
+												</div>
+												<div class="descr">
+													<div class="skill-tag skill-tag-familiar">Знакомо</div>
+													<a class="skill-name" href="#">Переводчик с&nbsp;английского</a>
+												</div>
+											</div>
+											<div class="skills-item">
+												<div class="pic">
+													<a href="#"><img src="images/skill-dummy-s.png"/></a>
+													<div class="skill-badge skill-badge-interested"></div>
+												</div>
+												<div class="descr">
+													<div class="skill-tag skill-tag-interested">Интересует</div>
+													<a class="skill-name" href="#">Менеджер сообществ</a>
+												</div>
+											</div>
+											<div class="clearfix vis-880"></div>
+											<div class="skills-item">
+												<div class="pic">
+													<a href="#"><img src="images/skill-dummy-s.png"/></a>
+													<div class="skill-badge skill-badge-familiar"></div>
+												</div>
+												<div class="descr">
+													<div class="skill-tag skill-tag-familiar">Знакомо</div>
+													<a class="skill-name" href="#">Переводчик с&nbsp;английского</a>
+												</div>
+											</div>
+											<div class="skills-item">
+												<div class="pic">
+													<a href="#"><img src="images/skill-dummy-s.png"/></a>
+												</div>
+												<div class="descr">
+													<div class="skill-tag skill-tag-expert">Эксперт</div>
+													<a class="skill-name" href="#">Менеджер сообществ</a>
+												</div>
+											</div>
+											<div class="clearfix vis-880"></div>
+											<div class="skills-item">
+												<div class="pic">
+													<a href="#"><img src="images/skill-dummy-s.png"/></a>
+													<div class="skill-badge skill-badge-familiar"></div>
+												</div>
+												<div class="descr">
+													<div class="skill-tag skill-tag-familiar">Знакомо</div>
+													<a class="skill-name" href="#">Переводчик с&nbsp;английского</a>
+												</div>
+											</div>
+											<div class="clearfix vis-880"></div>
+										</div>
+									</div>
+								</div>
+								<div class="block-expandable">
+									<h2 class="col-expandable-trigger clearfix">Умения <span>(</span>2<span>)</span><div class="arr"></div></h2>
+									<div class="col-expandable vis-wide">
+										<div class="row">
+											<div class="skills-item">
+												<div class="pic">
+													<a href="#"><img src="images/skill-dummy-s.png"/></a>
+													<div class="skill-badge skill-badge-familiar"></div>
+												</div>
+												<div class="descr">
+													<div class="skill-tag skill-tag-familiar">Знакомо</div>
+													<a class="skill-name" href="#">Переводчик с&nbsp;английского</a>
+												</div>
+											</div>
+											<div class="skills-item">
+												<div class="pic">
+													<a href="#"><img src="images/skill-dummy-s.png"/></a>
+													<div class="skill-badge skill-badge-interested"></div>
+												</div>
+												<div class="descr">
+													<div class="skill-tag skill-tag-interested">Интересует</div>
+													<a class="skill-name" href="#">Менеджер сообществ</a>
+												</div>
+											</div>
+											<div class="clearfix vis-880"></div>
+											<div class="skills-item">
+												<div class="pic">
+													<a href="#"><img src="images/skill-dummy-s.png"/></a>
+													<div class="skill-badge skill-badge-familiar"></div>
+												</div>
+												<div class="descr">
+													<div class="skill-tag skill-tag-familiar">Знакомо</div>
+													<a class="skill-name" href="#">Переводчик с&nbsp;английского</a>
+													<div class="skill-progress">
+														3 / 10
+													</div>
+												</div>
+											</div>
+											<div class="skills-item">
+												<div class="pic">
+													<a href="#"><img src="images/skill-dummy-s.png"/></a>
+												</div>
+												<div class="descr">
+													<div class="skill-tag skill-tag-interested">Эксперт</div>
+													<a class="skill-name" href="#">Менеджер сообществ</a>
+													<div class="skill-progress">
+														8 / 14
+													</div>
+												</div>
+											</div>
+											<div class="clearfix vis-880"></div>
+											<div class="skills-item">
+												<div class="pic">
+													<a href="#"><img src="images/skill-dummy-s.png"/></a>
+													<div class="skill-badge skill-badge-familiar"></div>
+												</div>
+												<div class="descr">
+													<div class="skill-tag skill-tag-familiar">Знакомо</div>
+													<a class="skill-name" href="#">Переводчик с&nbsp;английского</a>
+													<div class="skill-progress">
+														3 / 10
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="block-expandable">
+									<h2 class="col-expandable-trigger clearfix">Отложенные материалы <span>(</span>2<span>)</span><div class="arr"></div></h2>
+									<!-- <div class="clearfix vis-880"></div> после каждого второго .skills-item -->
+									<div class="col-expandable vis-wide">
+										<div class="row">
+											<div class="skills-item">
+												<div class="pic">
+													<a href="#"><img src="images/skill-dummy-s.png"/></a>
+												</div>
+												<div class="descr">
+													<a class="skill-name" href="#">Переводчик с&nbsp;английского</a>
+												</div>
+											</div>
+											<div class="skills-item">
+												<div class="pic">
+													<a href="#"><img src="images/skill-dummy-s.png"/></a>
+													<div class="skill-badge skill-badge-interested"></div>
+												</div>
+												<div class="descr">
+													<a class="skill-name" href="#">Менеджер сообществ</a>
+												</div>
+											</div>
+											<div class="clearfix vis-880"></div>
+											<div class="skills-item">
+												<div class="pic">
+													<a href="#"><img src="images/skill-dummy-s.png"/></a>
+												</div>
+												<div class="descr">
+													<a class="skill-name" href="#">Переводчик с&nbsp;английского</a>
+												</div>
+											</div>
+											<div class="skills-item">
+												<div class="pic">
+													<a href="#"><img src="images/skill-dummy-s.png"/></a>
+												</div>
+												<div class="descr">
+													<a class="skill-name" href="#">Менеджер сообществ</a>
+												</div>
+											</div>
+											<div class="clearfix vis-880"></div>
+											<div class="skills-item">
+												<div class="pic">
+													<a href="#"><img src="images/skill-dummy-s.png"/></a>
+												</div>
+												<div class="descr">
+													<a class="skill-name" href="#">Переводчик с&nbsp;английского</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						
+					</div>
+				</div>
+			
+			</div>
+		</div>
+			
+		<div class="footer">
+			<div class="footer-content">
+				<div class="footer-menu-trigger clearfix">
+					<div class="container">
+						<div class="footer-menu-trigger-content">
+							<div class="footer-menu-toggler toggler" data-togglertarget="footerMenu">
+								Меню
+								<div class="btn btn-footer-menu"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="footer-menu-wrapper">
+					<div class="container">
+						<ul class="footer-menu" id="footerMenu">
+							<li><a href="#">Наш блог</a></li>
+							<li><a href="#">О Смартии</a></li>
+							<li><a href="#">Умения</a></li>
+							<li><a href="#">Профессии</a></li>
+							<li><a href="#">Тесты</a></li>
+							<li><a href="#">Статьи</a></li>
+							<li><a href="#">Обратная связь</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="footer-bottom">
+					<div class="container">
+						<div class="footer-soclinks clearfix">
+							<a href="#" class="sn-ico ico-fb"></a>
+							<a href="#" class="sn-ico ico-twitter"></a>
+							<a href="#" class="sn-ico ico-ok"></a>
+							<a href="#" class="sn-ico ico-vk"></a>
+						</div>
+						<div class="footer-legal">
+							<a href="#">Правила распространения материалов Smartia.ru</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!-- <div style="height:500px;"></div> -->
+	
+		
+		
+		<!-- Bootstrap core JavaScript
+		================================================== -->
+		<!-- Placed at the end of the document so the pages load faster -->
+		<script src="js/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/bootstrap-select.min.js"></script>
+		<script src="js/icheck.min.js"></script>
+		<script src="js/modernizr.custom.js"></script>
+		<script src="js/template.js"></script>
+		
+	</body>
+</html>
