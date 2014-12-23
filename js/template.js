@@ -1,5 +1,17 @@
 ﻿$(document).ready(function() {
 
+	// Modal align
+	
+	// $('.modal').on('shown.bs.modal', function() {
+    // var initModalHeight = $('.modal-dialog').outerHeight(); //give an id to .mobile-dialog
+    // var userScreenHeight = $(window).outerHeight();
+    // if (initModalHeight <= userScreenHeight) {
+			// $('.modal-dialog').animate({
+				// marginTop: (userScreenHeight / 2) - (initModalHeight/2) //center it if it does fit
+			// },500);
+    // }
+	// });
+
 	$(".btn-want-to").click(function() {
 		if ($("html").scrollTop() > 0 || $("body").scrollTop() > 0) {
 			if ($("#searchForm").css("display") == "block") {

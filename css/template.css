@@ -1091,6 +1091,107 @@ textarea {
 	color:#353b3a;
 }
 
+/* Форма профиля */
+
+.profile-edit-wrapper {
+  background:#f3f2ea;
+}
+
+.profile-edit .block-expandable {
+  border-top:2px solid #d4d5d1;
+	padding:0 70px;
+}
+
+@media (max-width:580px) {
+	.profile-edit .block-expandable {
+		padding:0 50px;
+	}
+}
+
+.profile-edit .col-expandable {
+	padding: 0 0 30px 0;
+}
+
+.profile-edit .col-expandable-trigger,
+.profile-edit .col-expandable {
+  max-width:620px;
+	margin:0 auto !important;
+}
+
+.profile-edit .checkbox {
+  margin:0 0 6px 0;
+}
+
+.profile-edit .checkbox label {
+  padding:3px 0 0 47px;
+}
+
+.profile-edit .icheckbox {
+  width:26px;
+	height:26px;
+	background:url(../images/checkbox.png);
+}
+
+.profile-edit .icheckbox.checked {
+  background-position:-26px 0;
+}
+
+.profile-userpic-selector {
+  
+}
+
+.profile-userpic-selected {
+  width:255px;
+	height:255px;
+	float:left;
+	margin:0 15px 15px 0;
+}
+
+.profile-userpic-picker {
+  float:left;
+	width:300px;
+}
+
+.userpic-uploader {
+  width:121px;
+	height:121px;
+	float:left;
+	background:url(../images/profile-userpic-uploader-bg.png) 0 0 no-repeat;
+	margin:0 10px 10px 0;
+	font-size:16px;
+	line-height:24px;
+	font-weight:400;
+	color:#fff;
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;
+	padding:44px 20px 0 20px;
+	text-align:center;
+}
+
+.profile-userpic-selector .userpic-group {
+  width: 130px;
+	height: 130px;
+	float:left;
+}
+
+.userpic-selectable {
+  width:57px;
+	height:57px;
+	float:left;
+	margin:0 7px 7px 0;
+}
+
+.profile-edit label {
+  font-size:15px;
+	font-weight:300;
+}
+
+.profile-edit .form-footer {
+  padding:10px 0 0 0;
+}
+
+/* Форма профиля END */
+
 @media (max-width:419px) {
 	.col-expandable-trigger .num {
 		display:none;
@@ -1107,10 +1208,12 @@ textarea {
 		margin: 7px -17px 0 0;
 	}
 
+	.profile-edit .col-expandable,
 	.skills-list-all .col-expandable {
 		display:none;
 	}
 
+	.profile-edit h2.col-expandable-trigger,
 	.skills-list-all h2.col-expandable-trigger {
 		font-family: 'PT Sans';
 		font-size: 26px;
@@ -1122,6 +1225,7 @@ textarea {
 		cursor:pointer;
 	}
 
+	.profile-edit .col-expandable-trigger .arr,
 	.skills-list-all .col-expandable-trigger .arr {
 		width:34px;
 		height:34px;
@@ -1136,10 +1240,20 @@ textarea {
 		display:block;
 	}
 
+	.profile-edit .col-expandable-trigger-on .arr,
 	.skills-list-all .col-expandable-trigger-on .arr {
 		background-position:0 0;
 	}
 	
+}
+
+.profile-edit .col-expandable-trigger {
+  font-size:22px !important;
+	padding:22px 70px 25px 0 !important;
+}
+
+.profile-edit .col-expandable-trigger .arr {
+  top:21px !important;
 }
 
 .col-expandable-trigger-on {
@@ -1953,6 +2067,10 @@ h2.col-title {
   margin:0 27px 0 0;
 }
 
+.reg-socials-buttons .inact {
+  background-position:0 -35px;
+}
+
 .reg-form {
   background:#d8d7cc;
 	padding:17px 56px 35px 56px;
@@ -1981,14 +2099,17 @@ h2.col-title {
 	padding: 23px 56px;
 }
 
+.profile-edit-wrapper,
 .reg-form-wrapper {
   margin:0 -35px;
 }
 
 @media (max-width: 579px) {
-  .reg-form-wrapper {
+	.profile-edit-wrapper,
+	.reg-form-wrapper {
 		margin:0 -25px !important;
 	}
+	
 	.form-hint,
 	.reg-socials,
 	.reg-form {
@@ -2001,8 +2122,6 @@ h2.col-title {
 	}
 	
 }
-
-
 
 .bootstrap-select .btn:focus {
   outline:none !important;
@@ -3289,6 +3408,9 @@ h2.col-title {
 }
 
 @media (max-width:579px) {
+	.modal-alt {
+		/* background:#f3f2ea; */
+	}
   .modal-alt .modal-dialog {
 		left:0;
 		top:0;
@@ -3297,7 +3419,14 @@ h2.col-title {
 		min-height:100%;
 	}
 	.modal-alt .modal-content {
-		min-height:100%;
+		min-height: 100%;
+		height: 100%;
+		position: absolute;
+		left: 0;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		overflow:auto;
 	}
 	.add-event-descr {
 		width:auto;
@@ -3328,8 +3457,19 @@ h2.col-title {
 		padding: 30px 30px 14px 30px;
 	}
 	.modal-alt .modal-body {
-		padding: 15px 30px 20px 30px;
+		padding: 15px 30px 70px 30px;
 	}
+	.modal-alt .modal-footer {
+		width:100%;
+		position:fixed;
+		left:0;
+		bottom:0;
+	}
+	
+	.modal-alt form {
+		position:relative;
+	}
+	
 }
 
 .award-modal-header {
@@ -3370,24 +3510,24 @@ h2.col-title {
 }
 
 @media (max-width:779px) {
-  .skill-progress-block {
+  .skill-progress-block  .skill-progress-block {
 		margin:40px auto;
 	}
 }
 
-.skill-progress-full {
+.skill-progress-block .skill-progress-full {
 	max-width:270px;
 	margin:50px auto 60px auto;
 	position:relative;
 }
 
 @media (max-width:779px) {
-  .skill-progress-full {
+  .skill-progress-block .skill-progress-full {
 		margin:50px auto;
 	}
 }
 
-.skill-progress {
+.skill-progress-block .skill-progress {
   height:16px;
 	background:#d9d9d3;
 	border-radius:6px;
@@ -3395,7 +3535,7 @@ h2.col-title {
 	position:relative;
 }
 
-.skill-progress .progress-bar {
+.skill-progress-block .skill-progress .progress-bar {
   background:#8cc368;
 	-webkit-box-shadow:none;
 	box-shadow:none; 
@@ -3404,7 +3544,7 @@ h2.col-title {
 	z-index:1;
 }
 
-.skill-progress .progress-mark {
+.skill-progress-block .skill-progress .progress-mark {
   position:absolute;
 	width:3px;
 	height:100%;
@@ -3412,12 +3552,12 @@ h2.col-title {
 	z-index:2;
 }
 
-.skill-progress-labels {
+.skill-progress-block .skill-progress-labels {
   position:relative;
 	height:22px;
 }
 
-.skill-progress-labels .label {
+.skill-progress-block .skill-progress-labels .label {
   font-size:11px;
 	line-height:14px;
 	color:#353b3a;
@@ -3484,7 +3624,6 @@ h2.col-title {
 	}
 	.banners-item {
 		padding:0 5px;
-		height:83px;
 	}
 }
 
