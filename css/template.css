@@ -132,7 +132,10 @@ h2 {
 @media (max-width: 470px) {
   .btn-login {
 		width:40px;
-		overflow:hidden;
+		/* overflow:hidden; */
+	}
+	.btn-login .text {
+		display:none;
 	}
 	.btn-menu {
 		width:40px;
