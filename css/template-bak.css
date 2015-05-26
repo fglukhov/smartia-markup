@@ -235,7 +235,6 @@ h2 {
 
 .footer {
   position:relative;
-	background:#353b3a;
 }
 
 .footer-menu-trigger {
@@ -613,6 +612,7 @@ textarea {
 		display:none !important;
 	}
 }
+
 @media (max-width: 580px) {
   .col-r-collapsable {
 		padding:0 25px;
@@ -1194,6 +1194,7 @@ textarea {
 }
 
 /* Форма профиля END */
+
 @media (max-width:419px) {
 	.col-expandable-trigger .num {
 		display:none;
@@ -2125,7 +2126,6 @@ h2.col-title {
 	
 }
 
-
 .bootstrap-select .btn:focus {
   outline:none !important;
 }
@@ -2597,19 +2597,6 @@ h2.col-title {
   color:#545454;
 }
 
-.contacts-top {
-  position:relative;
-	z-index:2;
-}
-
-.contacts-bottom {
-  position:relative;
-	z-index:1;
-	background:#f3f2ea;
-	margin:-46px 0 0 0;
-	padding:20px 0 50px 0;
-}
-
 .contacts-l {
 	width:50%;
 	float:left;
@@ -2619,12 +2606,12 @@ h2.col-title {
 }
 
 .contacts-r {
-  width: 50%;
-  float: right;
-  padding: 20px 0 0 54px;
-  font-weight: 300;
-  font-size: 20px;
-  line-height: 30px;
+  width:50%;
+	float:right;
+	padding:0 0 0 54px;
+	font-weight:300;
+	font-size:20px;
+	line-height:30px;
 }
 
 .contacts-pic {
@@ -2635,7 +2622,7 @@ h2.col-title {
 .contacts-l .contacts-lead {
   font-size:26px;
 	line-height:36px;
-	margin:46px 0 85px 0;
+	margin:46px 0 55px 0;
 }
 
 @media (max-width:779px) {
@@ -2654,19 +2641,6 @@ h2.col-title {
 	.contacts-form {
 		margin:0 0 40px 0;
 	}
-	
-	.contacts-bottom {
-		margin-top:0;
-	}
-	
-	.contacts-pic {
-		padding: 0 0 30px 0;
-	}
-	
-	.contacts-l .contacts-lead {
-		margin:46px 0 0 0;
-	}
-	
 }
 
 @media (max-width:500px) {
@@ -3058,6 +3032,7 @@ h2.col-title {
     content: "▼";
     margin-right: 6px;
 }
+
 .user-buttons {
   margin:0 0 13px 0;
 }
@@ -3832,113 +3807,4 @@ h2.col-title {
 .btn-default-big:focus,
 .btn-primary-big:focus {
 	border-radius: 35px;
-}
-
-.partners-list {
-  margin:0 -10px 50px -10px;
-}
-
-.partners-list a {
-	display:block;
-  float:left;
-	margin:0 10px 20px 10px;
-}
-
-.partners-list img {
-	max-width:280px;
-}
-
-@media (max-width:500px) {
-  .partners-list a {
-		float:none;
-		text-align:center;
-	}
-}
-
-.modal-header-alt {
-  background:#d8d7cc;
-	padding:6px 30px;
-	text-align:center;
-}
-
-.modal-header-alt .modal-title {
-  font-weight:bold;
-	font-size:14px;
-	line-height:18px;
-	color:#7b7a74;
-}
-
-.register-pic {
-	margin:8px 0 8px -10px;
-}
-
-.register-descr {
-  padding:6px 0 0 0;
-}
-
-.register-descr .ttl {
-	font-family:'PT Sans';
-  font-size:33px;
-	line-height:36px;
-	font-weight:bold;
-	color:#545454;
-	margin:0 0 18px 0;
-}
-
-.register-descr ul {
-  margin:0 0 15px 0;
-	padding:0;
-	list-style:none;
-}
-
-.register-descr li {
-  padding:0 0 0 20px;
-	margin:0 0 15px 0;
-	position:relative;
-}
-
-.register-descr li:before {
-  content:"";
-	position:absolute;
-	left:0;
-	top:8px;
-	width:8px;
-	height:8px;
-	background:#2b85d8;
-	border-radius:50%;
-}
-
-.register-hint {
-  font-weight:bold;
-}
-
-.register-methods {
-  margin:25px 0 17px 0;
-}
-
-.register-methods-ttl {
-  float: left;
-  width: 142px;
-	padding:0 10px 0 0;
-}
-
-.register-methods-icons {
-  padding:5px 0 0 0;
-}
-
-@media (max-width:679px) {
-  .reg-col-l {
-		width:100%;
-		text-align:center;
-		padding:0;
-	}
-	
-	.reg-col-r {
-		width:100%;
-	}
-	
-	.register-pic {
-		margin:10px 0 24px 0;
-	}
-	
 }
