@@ -3375,6 +3375,11 @@ h2.col-title {
   padding:0;
 	margin:0;
 	border:none;
+	overflow:hidden;
+}
+
+.modal-alt .modal-footer .clearfix {
+  margin-right:-2px;
 }
 
 .modal-alt .modal-footer .modal-alt-button {
